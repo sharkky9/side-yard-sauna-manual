@@ -1,36 +1,37 @@
 const versions = {
   sauna: {
-    title: "Sauna-only build envelope",
-    diagram: "../diagrams/sauna-construction-plan-no-sidecar.svg.png",
-    alt: "Sauna-only construction footprint diagram",
-    caption: "Sauna-only footprint: 82 in wide x 94 in deep exterior wall footprint.",
+    title: "Sauna-only reference envelope",
+    diagram: "../diagrams/architectural/arch-a201-hot-room-section.svg",
+    alt: "Architectural hot-room section diagram",
+    caption: "Sauna-only reference: same 70 in x 84 in hot room without the storage bay.",
     dimensions: [
-      ["Finished hot room", "70 in x 82 in"],
-      ["Exterior wall footprint", "82 in x 94 in"],
-      ["Foundation platform", "about 84 in x 96 in"],
-      ["Roof target", "about 88 in x 100 in"],
+      ["Finished hot room", "70 in x 84 in"],
+      ["Exterior wall footprint", "82 in x 96 in"],
+      ["Foundation platform", "about 84 in x 98 in"],
+      ["Roof target", "about 88 in x 102 in"],
       ["Pier layout", "9 piers, 3 x 3"],
-      ["Best use", "cleanest build"]
+      ["Best use", "cleanest build, no storage"]
     ]
   },
   sidecar: {
-    title: "Sauna plus sidecar build envelope",
-    diagram: "../diagrams/sauna-construction-plan-sidecar.svg.png",
-    alt: "Sauna plus storage sidecar construction footprint diagram",
-    caption: "Sidecar footprint: 116 in wide x 94 in deep exterior wall footprint.",
+    title: "Sauna plus 5 ft sidecar build envelope",
+    diagram: "../diagrams/architectural/arch-a101-revised-floor-plan.svg",
+    alt: "Revised architectural floor plan for sauna plus sidecar",
+    caption: "Sidecar footprint: 148 in wide x 96 in deep exterior wall footprint.",
     dimensions: [
-      ["Finished hot room", "70 in x 82 in"],
-      ["Storage clear interior", "about 28 in x 82 in"],
-      ["Exterior wall footprint", "116 in x 94 in"],
-      ["Foundation platform", "about 118 in x 96 in"],
-      ["Roof target", "about 120 in x 100 in"],
-      ["Pier layout", "12 piers, 3 x 4"],
-      ["Best use", "storage plus sauna"]
+      ["Finished hot room", "70 in x 84 in"],
+      ["Storage clear interior", "60 in x 84 in"],
+      ["Divider wall allowance", "6 in"],
+      ["Exterior wall footprint", "148 in x 96 in"],
+      ["Foundation platform", "about 150 in x 98 in"],
+      ["Roof target", "about 154 in x 102 in"],
+      ["Pier layout", "15 piers, 5 x 3"],
+      ["Best use", "real storage plus sauna"]
     ]
   }
 };
 
-let currentVersion = "sauna";
+let currentVersion = "sidecar";
 
 const materials = [
   {
@@ -50,7 +51,7 @@ const materials = [
     tag: "foundation",
     timing: "Buy after pier layout is marked",
     items: [
-      "12 in sonotube forms: 9 for sauna-only, 12 for sidecar.",
+      "12 in sonotube forms: 9 for sauna-only, 15 for the five-foot sidecar version.",
       "Concrete mix: estimate 4 to 5 bags of 80 lb mix per 12 in x 36 in pier, then calculate from actual pier depth.",
       "#4 rebar: two vertical bars per pier plus a small tie or cage if local practice calls for it.",
       "Simpson-style ZMAX standoff post bases sized for 6x6 posts, with anchor bolts or wet-set/post-installed anchors per product spec.",
@@ -137,7 +138,7 @@ const materials = [
     scope: "sidecar",
     timing: "Only if building storage",
     items: [
-      "Extra exterior wall framing for the 28 in clear storage bay.",
+      "Extra exterior wall framing for the 60 in clear x 84 in deep storage bay.",
       "Separate sidecar exterior door, likely custom narrow board-and-batten or small shed door.",
       "Shelving stock, hooks, broom/tall-tool bay, and threshold flashing.",
       "Vent slots or small screened vents so stored items do not sit in a sealed damp closet.",
@@ -342,21 +343,21 @@ const bomItems = [
   ["Stones", "2-4 in sauna stones", "331 lb", "all", "Sauna supplier", "Order first", "Wash/inspect before loading; do not use decorative stones."],
   ["Door", "30 x 80 prehung sauna door, 32 x 82 RO", "1", "all", "Sauna supplier", "Order first", "Confirm exterior exposure suitability and flashing strategy."],
   ["Sonotubes", "12 in diameter", "9", "sauna", "Concrete/hardware", "Foundation trip", "Pier depth by local code/site soil."],
-  ["Sonotubes", "12 in diameter", "12", "sidecar", "Concrete/hardware", "Foundation trip", "As-built pad survey required before sidecar order."],
+  ["Sonotubes", "12 in diameter", "15", "sidecar", "Concrete/hardware", "Foundation trip", "As-built pad survey required before sidecar order."],
   ["Concrete", "80 lb bags", "36-45", "sauna", "Concrete/hardware delivery", "Foundation trip", "Estimate for 12 x 36 in piers; calculate actual depth before purchase."],
-  ["Concrete", "80 lb bags", "48-60", "sidecar", "Concrete/hardware delivery", "Foundation trip", "This is 3,840-4,800 lb dry mix; plan pallet delivery or helpers."],
+  ["Concrete", "80 lb bags", "60-75", "sidecar", "Concrete/hardware delivery", "Foundation trip", "This is 4,800-6,000 lb dry mix; plan pallet delivery, a mixer, and helpers."],
   ["Posts", "6x6 PT", "9 short posts", "sauna", "Lumberyard", "Foundation trip", "Cut individually after bases are set."],
-  ["Posts", "6x6 PT", "12 short posts", "sidecar", "Lumberyard", "Foundation trip", "Keep short; use bracing/platform for stiffness."],
+  ["Posts", "6x6 PT", "15 short posts", "sidecar", "Lumberyard", "Foundation trip", "Keep short; use bracing/platform for stiffness."],
   ["Beams", "4x6 PT x 8 ft", "3", "sauna", "Lumberyard", "Framing delivery", "Default beam system; do not swap without connector redesign."],
-  ["Beams", "4x6 PT x 8 ft", "4", "sidecar", "Lumberyard", "Framing delivery", "One additional beam line for sidecar width."],
+  ["Beams", "4x6 PT x 10 ft", "5", "sidecar", "Lumberyard", "Framing delivery", "Five front-to-back beam lines over the 5 x 3 pier grid."],
   ["Joists", "2x8 PT field joists", "7", "sauna", "Lumberyard", "Framing delivery", "Seven field joists plus front/back rim gives 12 in layout lines across 96 in depth."],
-  ["Joists", "2x8 PT field joists", "7", "sidecar", "Lumberyard", "Framing delivery", "Field joists run left-right across 118 in platform; front/back rims are separate."],
+  ["Joists", "2x8 PT x 14 ft field joists", "7", "sidecar", "Lumberyard", "Framing delivery", "Seven field joists run left-right across the 150 in platform; front/back rims are separate."],
   ["Rim boards", "2x8 PT", "4", "all", "Lumberyard", "Framing delivery", "Cut to selected platform; label before assembly."],
   ["Wall framing", "2x4 KD studs/plates/blocking", "Buy from wall takeoff + 10%", "all", "Lumberyard", "Shell delivery", "Premium straight stock for door, bench blocking, and vent/light backing."],
   ["Sheathing", "1/2 in structural wall sheathing", "8-10 sheets", "sauna", "Lumberyard", "Shell delivery", "Final by wall layout; add one sheet if unsure."],
-  ["Sheathing", "1/2 in structural wall sheathing", "10-12 sheets", "sidecar", "Lumberyard", "Shell delivery", "Includes sidecar/divider changes; final by layout."],
+  ["Sheathing", "1/2 in structural wall sheathing", "12-14 sheets", "sidecar", "Lumberyard", "Shell delivery", "Includes the larger sidecar and divider; final by wall layout."],
   ["Roof sheathing", "5/8 in roof sheathing", "3 sheets", "sauna", "Lumberyard", "Shell delivery", "Depends on overhang and roof product."],
-  ["Roof sheathing", "5/8 in roof sheathing", "4 sheets", "sidecar", "Lumberyard", "Shell delivery", "Sidecar roof is nearly full pad width."],
+  ["Roof sheathing", "5/8 in roof sheathing", "5 sheets", "sidecar", "Lumberyard", "Shell delivery", "The revised roof is wider than the existing DG pad."],
   ["Interior cladding", "Sauna-safe T&G", "about 260 sq ft", "all", "Finish wood supplier", "After dry shell", "Aspen/alder/thermo-aspen/hemlock preferred for Finnish mood; cedar optional."],
   ["Bench stock", "Clear body-contact lumber", "Field-fit", "all", "Finish wood supplier", "After mockup", "Buy after door trim/heater guard/bench mockup."],
   ["Sidecar door/hardware", "Narrow exterior shed-style door", "1 set", "sidecar", "Lumberyard/hardware", "After as-built width", "Vent bay separately; do not store hazardous materials."]
@@ -366,7 +367,7 @@ const assemblySheets = [
   {
     title: "Sheet A: Site fit and utility clearance",
     version: "all",
-    diagram: "CSS site diagram above",
+    diagram: "../diagrams/architectural/arch-a101-revised-floor-plan.svg",
     parts: ["stakes", "string", "spray paint", "panel-clearance tape", "landing mockup"],
     method: [
       "Mark the real 10 ft x 8 ft DG pad, not the assumed pad.",
@@ -379,13 +380,13 @@ const assemblySheets = [
   {
     title: "Sheet B: Pier grid and platform",
     version: "all",
-    diagram: "../diagrams/sauna-sonotube-foundation-section.svg.png",
+    diagram: "../diagrams/architectural/arch-s101-foundation-pier-grid.svg",
     parts: ["12 in sonotubes", "6x6 PT posts", "4x6 PT beams", "2x8 PT joists", "rodent mesh"],
     method: [
-      "Sauna-only platform: 84 x 96 in with 9 piers, 3 x 3.",
-      "Sidecar platform: 118 x 96 in with 12 piers, 3 x 4.",
+      "Sauna-only platform: about 84 x 98 in with 9 piers, 3 x 3.",
+      "Sidecar platform: about 150 x 98 in with 15 piers, 5 beam lines x 3 rows.",
       "Use front-to-back 4x6 beams over pier rows; run 2x8 joists left-right across the platform.",
-      "Layout seven field joists plus front/back rim joists for 12 in layout lines over the 96 in depth.",
+      "Layout seven field joists plus front/back rim joists for 12 in layout lines over the 98 in sidecar platform depth.",
       "Block under the heater, wall lines, bench loads, and sidecar divider if used."
     ],
     hold: "Do not install subfloor until diagonals match within 1/8-1/4 in, joist crowns are consistent, and the heater corner is blocked."
@@ -393,7 +394,7 @@ const assemblySheets = [
   {
     title: "Sheet C: Floor pan and wall base",
     version: "all",
-    diagram: "field detail",
+    diagram: "../diagrams/architectural/arch-a401-floor-wall-base-detail.svg",
     parts: ["3/4 in exterior subfloor", "sloped substrate", "cement board or mud bed", "waterproofing", "tile", "base flashing"],
     method: [
       "Build a solid cleanable floor, not an open mystery floor.",
@@ -407,7 +408,7 @@ const assemblySheets = [
   {
     title: "Sheet D: Weather shell, door, and roof water",
     version: "all",
-    diagram: "field detail",
+    diagram: "../diagrams/architectural/arch-a301-front-elevation.svg",
     parts: ["WRB", "flashing tape", "sill pan", "drip cap", "rainscreen furring", "roof drip edge"],
     method: [
       "Set and flash the exterior door during dry-in, before final siding.",
@@ -421,7 +422,7 @@ const assemblySheets = [
   {
     title: "Sheet E: Electrical and sensor rough-in",
     version: "all",
-    diagram: "field detail",
+    diagram: "../diagrams/architectural/arch-e101-heater-vent-control.svg",
     parts: ["conduit route", "controller box", "door sensor", "temperature sensor", "light/vent control"],
     method: [
       "Resolve GFCI/AHJ, breaker, disconnect, conductor, raceway, and permit choices with the electrician before equipment purchase is final.",
@@ -435,7 +436,7 @@ const assemblySheets = [
   {
     title: "Sheet F: Bench support and heater guard",
     version: "all",
-    diagram: "../diagrams/side-yard-sauna-loyly-section.svg",
+    diagram: "../diagrams/architectural/arch-a201-hot-room-section.svg",
     parts: ["bench ledgers", "blocking", "upper bench slats", "foot platform", "lower step", "heater guard"],
     method: [
       "Mock up the upper bench, return, foot platform, lower step, heater, and door trim before cutting premium stock.",
@@ -449,7 +450,7 @@ const assemblySheets = [
   {
     title: "Sheet G: Sidecar addendum",
     version: "sidecar",
-    diagram: "../diagrams/sauna-construction-plan-sidecar.svg.png",
+    diagram: "../diagrams/architectural/arch-a101-revised-floor-plan.svg",
     parts: ["divider wall", "narrow exterior door", "shelf blocking", "high/low vents", "threshold flashing"],
     method: [
       "Treat the sidecar as an integrated bay under the same roof, not a closet bolted on.",
@@ -468,8 +469,8 @@ const phases = [
     meta: "Do this before spending real money",
     tools: ["Tape measure", "laser measure", "notebook", "camera", "local permit portal"],
     steps: [
-      "Confirm the finished hot room remains 70 in wide x 82 in deep with a target 94-96 in finished ceiling.",
-      "Pick sauna-only or sidecar. Do not design both in parallel after ordering material.",
+      "Confirm the finished hot room is now 70 in wide x 84 in deep with a target 94-96 in finished ceiling.",
+      "Treat the five-foot sidecar as the working scheme unless the as-built site survey rejects it.",
       "Confirm the 30 x 80 prehung door, HIVE Mini 9, and 28 x 28 heater planning zone.",
       "Check setbacks, height rules, side-yard clearance, roof drainage direction, utility locate requirements, and whether the sauna counts as an accessory structure.",
       "Ask the electrician to sanity-check panel clearance, circuit capacity, conduit route, GFCI/AHJ decision, controller location, disconnect needs, and inspection path before equipment purchase is final."
@@ -484,9 +485,9 @@ const phases = [
     steps: [
       "Sweep the DG pad clean and mark the front approach side, fence side, and electrical-panel side.",
       "Tape the electrical panel working-clearance zone and keep it clear of building, sidecar door, gutter, landing, stored materials, and conduit clutter.",
-      "Mark the exterior wall footprint: 82 x 94 in for sauna-only, 116 x 94 in for sidecar.",
-      "Mark the foundation platform: about 84 x 96 in for sauna-only, 118 x 96 in for sidecar.",
-      "Lay out pier centers. Sauna-only uses 3 rows by 3 columns. Sidecar uses 3 rows by 4 columns.",
+      "Mark the exterior wall footprint: 82 x 96 in for sauna-only, 148 x 96 in for the five-foot sidecar.",
+      "Mark the foundation platform: about 84 x 98 in for sauna-only, 150 x 98 in for the five-foot sidecar.",
+      "Lay out pier centers. Sauna-only uses 3 rows by 3 columns. Sidecar uses 5 beam lines by 3 rows.",
       "Square the layout with diagonals, then mark pier centers clearly."
     ],
     checks: ["Diagonals match", "Panel keep-clear zone preserved", "Door side has landing clearance", "Roof drain direction chosen"],
@@ -528,7 +529,7 @@ const phases = [
     steps: [
       "Install beams over the post grid, then frame the PT platform on top.",
       "Use front-to-back 4x6 PT beams as the default system. Run 2x8 PT joists left-right across the platform.",
-      "Use seven field joists plus the front/back rim joists to create 12 in layout lines over the 96 in platform depth.",
+      "Use seven field joists plus the front/back rim joists to create 12 in layout lines over the 98 in sidecar platform depth.",
       "Add solid blocking under the heater area and under wall lines.",
       "Install diagonal bracing or structural sheathing so the platform cannot rack.",
       "Check square, level, and crown direction before subfloor goes down."
@@ -658,9 +659,9 @@ const phases = [
     meta: "Fit the sauna to bodies",
     tools: ["Miter saw", "router or roundover bit", "orbital sander", "stainless screws", "clamps"],
     steps: [
-      "Mock up the upper long bench about 58 in x 24 in before cutting premium stock.",
+      "Mock up the upper rear bench at roughly 70 in x 24 in before cutting premium stock.",
       "Set the upper bench at 50-52 in above finished floor and confirm 44-46 in to finished ceiling.",
-      "Build the short return so the third person can sit turned 90 degrees, not as a leftover corner.",
+      "Build the longer short-wall return so the third person can sit turned 90 degrees, not as a leftover corner.",
       "Build the foot bench around 18 in deep at 34-36 in above finished floor where it actually supports the main seats.",
       "Build the lower step at 16-18 in above finished floor as a step, not a fake low bench.",
       "Fasten bench supports into structural blocking/ledgers and seal foil penetrations; do not hang benches from cladding.",
@@ -709,9 +710,9 @@ const cutGroups = [
     items: [
       "Pier grid: 9 piers, 3 rows x 3 columns. Final spacing from actual platform layout.",
       "6x6 PT posts: 9 short posts, cut individually after bases are set.",
-      "4x6 PT beams: 3 at 96 in if using front-to-back beams.",
-      "2x8 PT rim: 2 at 84 in, 2 at 93 in for an 84 x 96 platform.",
-      "2x8 PT field joists: 7 at 81 in, plus front/back rim joists. This creates 12 in layout lines across the 96 in depth.",
+      "4x6 PT beams: 3 at 98 in if using front-to-back beams.",
+      "2x8 PT rim: 2 at 84 in, 2 at 95 in for an 84 x 98 platform.",
+      "2x8 PT field joists: 7 at 81 in, plus front/back rim joists. This creates 12 in layout lines across the 98 in depth.",
       "2x8 blocking: cut from offcuts for heater corner, wall lines, and mid-span stiffness."
     ]
   },
@@ -719,11 +720,11 @@ const cutGroups = [
     title: "Foundation and platform, sidecar",
     scope: "sidecar",
     items: [
-      "Pier grid: 12 piers, 3 rows x 4 columns.",
-      "6x6 PT posts: 12 short posts, cut individually after bases are set.",
-      "4x6 PT beams: 4 at 96 in if using front-to-back beams.",
-      "2x8 PT rim: 2 at 118 in, 2 at 93 in for an 118 x 96 platform.",
-      "2x8 PT field joists: 7 at 115 in, plus front/back rim joists. This creates 12 in layout lines across the 96 in depth.",
+      "Pier grid: 15 piers, 5 beam lines x 3 rows.",
+      "6x6 PT posts: 15 short posts, cut individually after bases are set.",
+      "4x6 PT beams: 5 at about 98 in if using front-to-back beams.",
+      "2x8 PT rim: 2 at about 150 in, 2 at about 95 in for a 150 x 98 platform.",
+      "2x8 PT field joists: 7 at about 147 in, plus front/back rim joists. This creates 12 in layout lines across the 98 in depth.",
       "Add blocking under the sidecar divider wall and sidecar door threshold."
     ]
   },
@@ -740,8 +741,8 @@ const cutGroups = [
   {
     title: "Bench and duckboard starter cuts",
     items: [
-      "Upper long bench: about 58 in long x 24 in deep.",
-      "Short return: field-fit for third-person posture and door trim. Start with about 24 in seat depth along the short wall.",
+      "Upper rear bench: about 70 in long x 24 in deep before final end trims/backrest decisions.",
+      "Short-wall return: field-fit for third-person posture and door trim. Start with about 24 in seat depth and 54-60 in usable return length.",
       "Foot bench: about 18 in deep, only where feet need support.",
       "Lower step: about 30 in wide x 10-12 in tread.",
       "Duckboards: build as removable modules small enough to lift with one hand.",
@@ -751,7 +752,7 @@ const cutGroups = [
   {
     title: "Interior cladding and trim quantities",
     items: [
-      "Interior wall area before openings: about 203 sq ft.",
+      "Interior wall area before openings: about 205 sq ft.",
       "Ceiling area: about 40 sq ft.",
       "Order about 260 sq ft of sauna-safe T&G after subtracting door and adding waste.",
       "Use stainless fasteners inside the hot room.",
@@ -762,9 +763,9 @@ const cutGroups = [
     title: "Exterior shell quantities",
     items: [
       "Sauna-only exterior wall area is roughly 230-260 sq ft depending on wall height and gables.",
-      "Sidecar adds roughly 60-90 sq ft of exterior wall and door/trim complexity.",
+      "The five-foot sidecar adds a real storage bay plus roughly 110-140 sq ft of exterior wall and door/trim complexity.",
       "Order structural sheathing by actual layout: likely 8-10 wall sheets for sauna-only, more for sidecar.",
-      "Roof sheathing: roughly 3 sheets sauna-only, 4 sheets sidecar, depending on overhangs and roof layout.",
+      "Roof sheathing: roughly 3 sheets sauna-only, 5 sheets sidecar, depending on overhangs and roof layout.",
       "Siding order should include at least 10-15 percent waste."
     ]
   }
@@ -774,13 +775,13 @@ const phaseDetails = [
   {
     parts: ["site photos", "permit notes", "heater manual", "door spec", "electrical notes"],
     fasteners: ["none"],
-    measurements: ["70 x 82 in finished room", "94-96 in finished ceiling", "32 x 82 in door RO"],
+    measurements: ["70 x 84 in finished room", "94-96 in finished ceiling", "32 x 82 in door RO"],
     hold: "Do not buy heater, door, or finish wood until the site, code, and electrical path are understood."
   },
   {
     parts: ["stakes", "string", "paint", "panel-clearance tape"],
     fasteners: ["none"],
-    measurements: ["84 x 96 in platform or 118 x 96 in sidecar platform", "matching diagonals within 1/8-1/4 in"],
+    measurements: ["84 x 98 in platform or 150 x 98 in sidecar platform", "matching diagonals within 1/8-1/4 in"],
     hold: "Do not dig until the panel clearance, door landing, roof water path, and pier grid are marked."
   },
   {
@@ -798,7 +799,7 @@ const phaseDetails = [
   {
     parts: ["4x6 PT beams", "2x8 PT rim", "2x8 PT field joists", "blocking", "rodent mesh"],
     fasteners: ["PT-rated structural screws", "hanger nails/screws if hangers are used"],
-    measurements: ["12 in layout lines over 96 in depth", "diagonals within 1/8-1/4 in"],
+    measurements: ["12 in layout lines over 98 in depth", "diagonals within 1/8-1/4 in"],
     hold: "Do not install subfloor until platform is square, blocked, braced, and heater corner is reinforced."
   },
   {
@@ -900,9 +901,9 @@ function renderDimensions(key) {
     .join("");
   dashboardVersion.textContent = key === "sidecar" ? "With sidecar" : "Sauna only";
   dashboardFootprint.textContent = version.dimensions.find(([term]) => term === "Exterior wall footprint")?.[1] + " exterior wall footprint";
-  document.getElementById("pierCount").value = key === "sidecar" ? 12 : 9;
-  document.getElementById("layoutWidth").value = key === "sidecar" ? 118 : 84;
-  document.getElementById("layoutDepth").value = 96;
+  document.getElementById("pierCount").value = key === "sidecar" ? 15 : 9;
+  document.getElementById("layoutWidth").value = key === "sidecar" ? 150 : 84;
+  document.getElementById("layoutDepth").value = 98;
   renderBOM();
   renderCuts();
   renderAssemblySheets();
@@ -1249,7 +1250,7 @@ function wireEvents() {
 renderMaterials();
 renderPrep();
 renderPhases();
-renderDimensions("sauna");
+renderDimensions("sidecar");
 wireEvents();
 updateProgress();
 updateCalculators();

@@ -220,6 +220,20 @@ main {
   border-radius: var(--radius);
   background: var(--panel);
   box-shadow: var(--shadow);
+  min-width: 0;
+}
+
+.diagram-frame,
+.site-checks article,
+.contract-grid article,
+.prep-card,
+.field-rules,
+.trip-panel,
+.trip-card,
+.tool-kit,
+.phase,
+.cut-note {
+  min-width: 0;
 }
 
 .dashboard-card {
@@ -447,6 +461,76 @@ main {
   border-block: 1px solid #ead8b6;
 }
 
+.drawing-section {
+  background: #f6f7f4;
+  border-block: 1px solid #dfe5de;
+}
+
+.drawing-package {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.34fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.sheet-list,
+.drawing-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.sheet-list {
+  position: sticky;
+  top: 92px;
+  padding: 20px;
+}
+
+.sheet-list h3,
+.drawing-card figcaption {
+  margin: 0;
+}
+
+.sheet-list ol {
+  margin: 12px 0 16px;
+  padding-left: 22px;
+}
+
+.sheet-list li {
+  margin: 8px 0;
+}
+
+.sheet-list p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.drawing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.drawing-card {
+  margin: 0;
+  overflow: hidden;
+}
+
+.drawing-card img {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: contain;
+  background: #fffdf8;
+}
+
+.drawing-card figcaption {
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 14px;
+  border-top: 1px solid var(--line);
+}
+
 .loyly-frame img {
   aspect-ratio: 4 / 3;
 }
@@ -508,7 +592,7 @@ main {
 
 .diagram-frame img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 11;
   object-fit: contain;
 }
 
@@ -631,11 +715,16 @@ main {
   margin-top: 18px;
   padding: 18px;
   box-shadow: none;
+  min-width: 0;
 }
 
 .bom-table,
 .fastener-schedule {
+  display: block;
+  width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .bom-table table,
@@ -1173,6 +1262,7 @@ main {
   .dimension-layout,
   .site-layout,
   .performance-layout,
+  .drawing-package,
   .prep-grid,
   .assembly-sheet,
   .phase-body,
@@ -1196,6 +1286,10 @@ main {
   .cut-note {
     position: static;
   }
+
+  .sheet-list {
+    position: static;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1216,6 +1310,7 @@ main {
   }
 
   .start-dashboard,
+  .drawing-grid,
   .visual-strip,
   .materials-grid,
   .wave-body,

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Floor Pan, Wall Base, And Rainscreen Detail</title>
+  <desc id="desc">Architectural wall-base detail showing the sauna floor waterproofing, wall framing, insulation, foil vapor barrier, furring, cladding gap, and base flashing.</desc>
+  
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#121820" />
+      </marker>
+      <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#245f9f" />
+      </marker>
+      <pattern id="soil-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="18" stroke="#c8c1b2" stroke-width="1"/>
+      </pattern>
+      <pattern id="deck-hatch" width="16" height="16" patternUnits="userSpaceOnUse">
+        <path d="M0 16 L16 0" stroke="#d1c39f" stroke-width="1"/>
+      </pattern>
+      <pattern id="wood-grain" width="28" height="8" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="4" x2="28" y2="4" stroke="#b78953" stroke-width="1"/>
+      </pattern>
+      <style>
+        .sheet-bg{fill:#fffdf8}
+        .border{fill:none;stroke:#121820;stroke-width:2}
+        .title-line{stroke:#121820;stroke-width:1.2}
+        .wall{fill:#d8dce2;stroke:#121820;stroke-width:4}
+        .cut{fill:#fffdf8;stroke:#121820;stroke-width:3}
+        .thin{fill:none;stroke:#121820;stroke-width:1.4}
+        .med{fill:none;stroke:#121820;stroke-width:2.2}
+        .heavy{fill:none;stroke:#121820;stroke-width:4}
+        .dim{fill:none;stroke:#121820;stroke-width:1.2;marker-start:url(#arrow);marker-end:url(#arrow)}
+        .ext{stroke:#5c6673;stroke-width:1;stroke-dasharray:5 5}
+        .label{font:500 22px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
+        .small{font:500 16px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
+        .tiny{font:500 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
+        .dimtxt{font:700 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
+        .note{font:500 15px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#5c6673}
+        .title{font:800 28px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
+        .sheetno{font:900 38px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
+        .badge{font:800 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#fff}
+      </style>
+    </defs>
+  <rect width="1600" height="1100" class="sheet-bg"/>
+  
+    <rect x="40" y="40" width="1520" height="1020" class="border"/>
+    <line x1="40" y1="980" x2="1560" y2="980" class="title-line"/>
+    <line x1="1160" y1="980" x2="1160" y2="1060" class="title-line"/>
+    <text x="64" y="1024" class="title">Floor Pan, Wall Base, And Rainscreen Detail</text>
+    <text x="64" y="1052" class="note">The inch that keeps water out of hidden framing</text>
+    <text x="1190" y="1030" class="sheetno">A401</text>
+    <text x="1190" y="1056" class="note">Side Yard Sauna · revised sidecar scheme · dimensions in inches</text>
+  
+      <rect x="520" y="290" width="90" height="620" class="" fill="#d8dce2" stroke="#121820" stroke-width="3"/>
+      <rect x="610" y="290" width="26" height="620" class="" fill="#fff3c4" stroke="#121820" stroke-width="1.4"/>
+      <rect x="636" y="290" width="12" height="620" class="" fill="#cfd7df" stroke="#121820" stroke-width="1.1"/>
+      <rect x="660" y="290" width="34" height="620" class="" fill="#f4e4c9" stroke="#121820" stroke-width="1.4"/>
+      <rect x="694" y="290" width="28" height="620" class="" fill="url(#wood-grain)" stroke="#121820" stroke-width="1.2"/>
+      <rect x="408" y="820" width="510" height="32" class="" fill="#d2d6dc" stroke="#121820" stroke-width="2"/>
+      <rect x="408" y="782" width="510" height="38" class="" fill="#e7e0d4" stroke="#121820" stroke-width="1.5"/>
+      <rect x="408" y="766" width="510" height="16" class="" fill="#39505f" stroke="#121820" stroke-width="1.5"/>
+      <path d="M410 766 L722 766 L722 558 L674 558 L674 740 L410 740 Z" fill="#88a9bf" opacity="0.26" stroke="#245f9f" stroke-width="2"/>
+      <rect x="694" y="718" width="28" height="64" class="" fill="#fffdf8" stroke="#fffdf8" stroke-width="0"/>
+      <line x1="694" y1="718" x2="722" y2="718" class="thin"/>
+      <text x="712" y="708" class="tiny" text-anchor="middle" >1/2-1 in open gap</text>
+      <rect x="660" y="728" width="62" height="30" class="" fill="#1f2933" stroke="#121820" stroke-width="1.2"/>
+      
+    <path d="M705 740 L990 260" class="thin"/>
+    <circle cx="705" cy="740" r="4" fill="#121820"/>
+    <text x="998" y="265" class="tiny" text-anchor="start" >black/stainless base flashing behind shadow gap</text>
+      
+    <path d="M550 390 L990 310" class="thin"/>
+    <circle cx="550" cy="390" r="4" fill="#121820"/>
+    <text x="998" y="315" class="tiny" text-anchor="start" >2x4 wall framing</text>
+      
+    <path d="M624 390 L990 360" class="thin"/>
+    <circle cx="624" cy="390" r="4" fill="#121820"/>
+    <text x="998" y="365" class="tiny" text-anchor="start" >mineral wool insulation</text>
+      
+    <path d="M642 390 L990 410" class="thin"/>
+    <circle cx="642" cy="390" r="4" fill="#121820"/>
+    <text x="998" y="415" class="tiny" text-anchor="start" >continuous foil vapor barrier, taped</text>
+      
+    <path d="M678 390 L990 460" class="thin"/>
+    <circle cx="678" cy="390" r="4" fill="#121820"/>
+    <text x="998" y="465" class="tiny" text-anchor="start" >1x2 furring creates air gap</text>
+      
+    <path d="M710 390 L990 510" class="thin"/>
+    <circle cx="710" cy="390" r="4" fill="#121820"/>
+    <text x="998" y="515" class="tiny" text-anchor="start" >sauna cladding stops above floor</text>
+      
+    <path d="M550 768 L990 610" class="thin"/>
+    <circle cx="550" cy="768" r="4" fill="#121820"/>
+    <text x="998" y="615" class="tiny" text-anchor="start" >waterproof floor turns up 4-6 in behind wall base</text>
+      
+    <path d="M500 806 L990 660" class="thin"/>
+    <circle cx="500" cy="806" r="4" fill="#121820"/>
+    <text x="998" y="665" class="tiny" text-anchor="start" >sloped tile / cleanable finish under removable duckboards</text>
+      <text x="554" y="264" class="label" text-anchor="middle" >Sauna interior side</text>
+      <text x="770" y="264" class="label" text-anchor="middle" >Wall layers</text>
+      <g transform="translate(990 720)">
+        <text x="0" y="0" class="label" text-anchor="start" >Hold point</text>
+        <text x="0" y="38" class="note" text-anchor="start" >Do not install cladding until this base detail is visible,</text>
+        <text x="0" y="66" class="note" text-anchor="start" >waterproofed, photographed, and inspectable.</text>
+      </g>
+</svg>

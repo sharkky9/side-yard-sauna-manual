@@ -19,6 +19,7 @@
         <a href="#overview">Overview</a>
         <a href="#site">Site</a>
         <a href="#dimensions">Dimensions</a>
+        <a href="#drawings">Drawings</a>
         <a href="#performance">Loyly</a>
         <a href="#materials">Materials</a>
         <a href="#prep">Prep</a>
@@ -36,12 +37,12 @@
       <section id="overview" class="manual-hero">
         <div class="hero-copy">
           <p class="eyebrow">Start here</p>
-          <h1>Build a compact side-yard sauna that actually earns good loyly.</h1>
+          <h1>Build a side-yard sauna with a real storage sidecar and good loyly.</h1>
           <p>
-            This is no longer just a concept packet. It is a field manual for a small, durable,
-            sitting sauna: site fit first, weather shell second, hot-room performance third,
-            finish carpentry last. The structure should be boring. The sauna should feel calm,
-            high, hot, and easy to maintain.
+            The current scheme is a 70 in x 84 in hot room beside a 60 in x 84 in storage bay.
+            The building now exceeds the old DG pad sideways, so the foundation becomes part of
+            the design instead of an afterthought. Site fit first, weather shell second, hot-room
+            performance third, finish carpentry last.
           </p>
           <div class="start-actions" aria-label="Manual quick actions">
             <a href="#site">Check the side yard</a>
@@ -52,13 +53,18 @@
         <div class="start-dashboard" aria-label="Project dashboard">
           <div class="dashboard-card selected-version">
             <span>Selected build</span>
-            <strong id="dashboardVersion">Sauna only</strong>
-            <small id="dashboardFootprint">82 in x 94 in exterior wall footprint</small>
+            <strong id="dashboardVersion">With sidecar</strong>
+            <small id="dashboardFootprint">148 in x 96 in exterior wall footprint</small>
           </div>
           <div class="dashboard-card">
             <span>Hot room</span>
-            <strong>70 in x 82 in</strong>
+            <strong>70 in x 84 in</strong>
             <small>94-96 in finished ceiling target</small>
+          </div>
+          <div class="dashboard-card">
+            <span>Sidecar</span>
+            <strong>60 in x 84 in</strong>
+            <small>storage clear interior</small>
           </div>
           <div class="dashboard-card">
             <span>Capacity truth</span>
@@ -98,21 +104,17 @@
           <p class="eyebrow">Site fit gate</p>
           <h2>The side yard decides what is allowed.</h2>
           <p>
-            The sauna can be compact and handsome, but the pad is tight. Before you buy the shell,
+            The sauna can be compact and handsome, but the revised sidecar version is wider than the pad.
+            Before you buy the shell,
             mark the as-built pad, the fence line, the house/service side, the electrical panel
             clearance, the door swing, the landing, and the roof water path.
           </p>
         </div>
         <div class="site-layout">
-          <div class="site-diagram" aria-label="Side yard site planning diagram">
-            <span class="site-label site-fence">Fence / rear constraint</span>
-            <span class="site-label site-house">House and service side</span>
-            <span class="site-pad">10 ft x 8 ft DG pad</span>
-            <span class="site-building">Sauna footprint</span>
-            <span class="site-panel">Panel keep-clear</span>
-            <span class="site-door">Out-swing door + landing</span>
-            <span class="site-water">Roof water away from fence and panel</span>
-          </div>
+          <figure class="diagram-frame site-drawing">
+            <img src="../diagrams/architectural/arch-a101-revised-floor-plan.svg" alt="Architectural site-fit plan showing the revised sidecar sauna and existing DG pad" />
+            <figcaption>The building is now wider than the DG pad. Confirm the as-built side yard before committing to this footprint.</figcaption>
+          </figure>
           <div class="site-checks">
             <article>
               <h3>Do not proceed until</h3>
@@ -121,7 +123,7 @@
                 <li>Electrical panel working clearance is physically marked and preserved.</li>
                 <li>Door swing and a non-slip landing fit without stepping into loose DG.</li>
                 <li>Roof drip edge, gutter, or discharge path will not soak the fence, panel side, or pier bases.</li>
-                <li>Sidecar version has an as-built pad survey; its 118 in x 96 in platform is essentially full-pad.</li>
+                <li>Sidecar version has an as-built pad survey; its 150 in x 98 in platform extends beyond the DG pad sideways.</li>
               </ul>
             </article>
             <article>
@@ -141,21 +143,24 @@
       <section id="dimensions" class="section">
         <div class="section-head">
           <p class="eyebrow">Fit and footprint</p>
-          <h2>Two versions, same hot room.</h2>
+          <h2>The sidecar version is now the working scheme.</h2>
           <p>
-            The sidecar changes the building width, not the sauna logic. The hot room stays compact.
+            The sauna-only version remains as a reference, but the storage bay is no longer a tiny closet.
+            It is a 5 ft clear sidecar under the same roof. The added depth mainly improves the entry,
+            lower step, and short-wall return. It does not change the capacity truth: two excellent,
+            three good, four compromised.
           </p>
         </div>
 
         <div class="segmented-control" role="tablist" aria-label="Choose build version">
-          <button class="segment is-active" id="version-sauna" type="button" role="tab" aria-selected="true" data-version="sauna">Sauna only</button>
-          <button class="segment" id="version-sidecar" type="button" role="tab" aria-selected="false" data-version="sidecar">With sidecar</button>
+          <button class="segment" id="version-sauna" type="button" role="tab" aria-selected="false" data-version="sauna">Sauna only reference</button>
+          <button class="segment is-active" id="version-sidecar" type="button" role="tab" aria-selected="true" data-version="sidecar">With 5 ft sidecar</button>
         </div>
 
         <div class="dimension-layout">
           <figure class="diagram-frame">
-            <img id="versionDiagram" src="../diagrams/sauna-construction-plan-no-sidecar.svg.png" alt="Sauna-only construction footprint diagram" />
-            <figcaption id="versionCaption">Sauna-only footprint: 82 in wide x 94 in deep exterior wall footprint.</figcaption>
+            <img id="versionDiagram" src="../diagrams/architectural/arch-a101-revised-floor-plan.svg" alt="Revised architectural floor plan" />
+            <figcaption id="versionCaption">Sidecar footprint: 148 in wide x 96 in deep exterior wall footprint.</figcaption>
           </figure>
           <div class="dimension-panel">
             <h3 id="versionTitle">Sauna-only build envelope</h3>
@@ -164,6 +169,62 @@
               <strong>Planning wall build-up:</strong>
               <span>6 in each side. That covers framing, sheathing, weather layers, furring, and interior cladding as a conservative planning number.</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="drawings" class="section drawing-section">
+        <div class="section-head">
+          <p class="eyebrow">Architectural drawing package</p>
+          <h2>The diagrams now have to carry the build.</h2>
+          <p>
+            The old graphics were useful for thinking, but they were not good construction drawings.
+            This set uses sheet numbers, title blocks, line weights, dimension strings, and direct labels.
+            It is still a planning set, not stamped plans, but it should read like architecture instead
+            of a slide deck.
+          </p>
+        </div>
+        <div class="drawing-package">
+          <aside class="sheet-list">
+            <h3>Sheet list</h3>
+            <ol>
+              <li><strong>A101</strong> Revised floor plan</li>
+              <li><strong>S101</strong> Foundation and pier grid</li>
+              <li><strong>A201</strong> Hot-room section</li>
+              <li><strong>A301</strong> Front elevation and roof control</li>
+              <li><strong>A401</strong> Floor pan, wall base, and rainscreen detail</li>
+              <li><strong>E101</strong> Heater, vent, and control rough-in</li>
+            </ol>
+            <p>
+              Drawing convention: heavy lines for cut walls and structure, medium lines for primary objects,
+              light lines for dimensions and leaders, dashed lines for existing pad and planning envelopes.
+            </p>
+          </aside>
+          <div class="drawing-grid">
+            <figure class="drawing-card">
+              <img src="../diagrams/architectural/arch-a101-revised-floor-plan.svg" alt="Architectural floor plan for revised sidecar sauna" />
+              <figcaption>A101 · revised plan, clear interiors, doors, benches, heater zone, and DG pad relationship.</figcaption>
+            </figure>
+            <figure class="drawing-card">
+              <img src="../diagrams/architectural/arch-s101-foundation-pier-grid.svg" alt="Foundation and pier grid for revised sidecar sauna" />
+              <figcaption>S101 · 15-pier foundation grid with outer pier lines extending onto soil.</figcaption>
+            </figure>
+            <figure class="drawing-card">
+              <img src="../diagrams/architectural/arch-a201-hot-room-section.svg" alt="Hot room section showing loyly geometry and ventilation" />
+              <figcaption>A201 · bench heights, top-bench-to-ceiling relationship, heater, and air path.</figcaption>
+            </figure>
+            <figure class="drawing-card">
+              <img src="../diagrams/architectural/arch-a301-front-elevation.svg" alt="Front elevation of sauna and sidecar" />
+              <figcaption>A301 · integrated shed form, front doors, roof water control, and DG pad width.</figcaption>
+            </figure>
+            <figure class="drawing-card">
+              <img src="../diagrams/architectural/arch-a401-floor-wall-base-detail.svg" alt="Floor pan and wall base construction detail" />
+              <figcaption>A401 · the floor/wall-base detail that prevents hidden water problems.</figcaption>
+            </figure>
+            <figure class="drawing-card">
+              <img src="../diagrams/architectural/arch-e101-heater-vent-control.svg" alt="Heater, ventilation, and control rough-in diagram" />
+              <figcaption>E101 · heater planning zone, vent sleeves, UKU sensor locations, and electrical boundary.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -197,8 +258,8 @@
             <article>
               <h3>Heater sizing</h3>
               <ul>
-                <li>Room volume is roughly 312-319 ft3 before glass adjustment.</li>
-                <li>Glass door adds effective volume, so HIVE Mini 6 is too close to its upper limit.</li>
+                <li>Room volume is about 327 ft3 before glass adjustment.</li>
+                <li>Glass door adds effective volume, so HIVE Mini 6 is now below the practical target.</li>
                 <li>HIVE Mini 9 is the default: 283-460 ft3 range at 240 V.</li>
                 <li>Keep the 28 x 28 in heater planning zone until current clearances are confirmed.</li>
               </ul>
@@ -224,21 +285,6 @@
             </article>
           </div>
         </div>
-      </section>
-
-      <section class="section visual-strip" aria-label="Build diagrams">
-        <figure>
-          <img src="../diagrams/sauna-70x82-capacity-3-plus-1.svg.png" alt="Capacity diagram showing two excellent seats, a reasonable third seat, and a compromised fourth" />
-          <figcaption>Capacity: two excellent, three reasonable, four compromised.</figcaption>
-        </figure>
-        <figure>
-          <img src="../diagrams/side-yard-sauna-three-level-bench-section.svg.png" alt="Three-level bench section showing upper bench, foot bench, lower step, and heater stone line" />
-          <figcaption>Bench stack: upper bench, foot bench, lower step.</figcaption>
-        </figure>
-        <figure>
-          <img src="../diagrams/sauna-sonotube-foundation-section.svg.png" alt="Poured sonotube pier foundation section with standoff post bases and short posts" />
-          <figcaption>Foundation: poured piers, standoff bases, short posts.</figcaption>
-        </figure>
       </section>
 
       <section id="materials" class="section">
@@ -355,15 +401,15 @@
             <div class="calc-row">
               <label>Diameter <input id="pierDiameter" type="number" min="6" max="24" value="12" /> in</label>
               <label>Depth <input id="pierDepth" type="number" min="12" max="72" value="36" /> in</label>
-              <label>Piers <input id="pierCount" type="number" min="1" max="20" value="9" /> count</label>
+              <label>Piers <input id="pierCount" type="number" min="1" max="24" value="15" /> count</label>
             </div>
             <p id="concreteResult" class="calc-result"></p>
           </article>
           <article class="calculator-card">
             <h3>Square layout checker</h3>
             <div class="calc-row">
-              <label>Width <input id="layoutWidth" type="number" min="1" value="84" /> in</label>
-              <label>Depth <input id="layoutDepth" type="number" min="1" value="96" /> in</label>
+              <label>Width <input id="layoutWidth" type="number" min="1" value="150" /> in</label>
+              <label>Depth <input id="layoutDepth" type="number" min="1" value="98" /> in</label>
             </div>
             <p id="diagonalResult" class="calc-result"></p>
           </article>
@@ -463,8 +509,9 @@
           <article>
             <h3>Decision log</h3>
             <p>
-              Current recommendation: sauna-only if you want the cleanest build. Sidecar if storage matters enough
-              to use almost the full pad and keep roof overhangs tight.
+              Current recommendation: build the sidecar only if the storage value is worth expanding the foundation
+              beyond the DG pad. The better version is not a bigger sauna experience; it is a better property object:
+              sauna plus a real exterior closet under one disciplined roof.
             </p>
           </article>
         </div>
