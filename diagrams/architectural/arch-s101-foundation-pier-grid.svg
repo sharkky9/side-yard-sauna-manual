@@ -48,7 +48,7 @@
     <text x="64" y="1024" class="title">Foundation And Pier Grid</text>
     <text x="64" y="1052" class="note">Recommended strong scheme: 15 piers · 5 front-to-back beam lines · outer piers extend onto soil</text>
     <text x="1190" y="1030" class="sheetno">S101</text>
-    <text x="1190" y="1056" class="note">Side Yard Sauna · revised sidecar scheme · dimensions in inches</text>
+    <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
   
       <rect x="90" y="220" width="210" height="588" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
       <rect x="1200" y="220" width="210" height="588" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
@@ -77,15 +77,15 @@
     <line x1="390" y1="878" x2="1110" y2="878" class="dim"/>
     <text x="750" y="870" class="dimtxt" text-anchor="middle" >120 existing DG pad</text>
       
-    <line x1="244" y1="220" x2="276" y2="220" class="ext"/>
-    <line x1="244" y1="808" x2="276" y2="808" class="ext"/>
-    <line x1="252" y1="220" x2="252" y2="808" class="dim"/>
-    <text x="244" y="514" class="dimtxt" text-anchor="middle" transform="rotate(-90 244 514)">98 foundation depth</text>
+    <line x1="214" y1="220" x2="246" y2="220" class="ext"/>
+    <line x1="214" y1="808" x2="246" y2="808" class="ext"/>
+    <line x1="222" y1="220" x2="222" y2="808" class="dim"/>
+    <text x="214" y="514" class="dimtxt" text-anchor="middle" transform="rotate(-90 214 514)">98 foundation depth</text>
       
-    <line x1="276" y1="226" x2="308" y2="226" class="ext"/>
-    <line x1="276" y1="802" x2="308" y2="802" class="ext"/>
-    <line x1="284" y1="226" x2="284" y2="802" class="dim"/>
-    <text x="276" y="514" class="dimtxt" text-anchor="middle" transform="rotate(-90 276 514)">96 DG depth</text>
+    <line x1="264" y1="226" x2="296" y2="226" class="ext"/>
+    <line x1="264" y1="802" x2="296" y2="802" class="ext"/>
+    <line x1="272" y1="226" x2="272" y2="802" class="dim"/>
+    <text x="264" y="514" class="dimtxt" text-anchor="middle" transform="rotate(-90 264 514)">96 DG depth</text>
       
     <line x1="336" y1="176" x2="336" y2="206" class="ext"/>
     <line x1="543" y1="176" x2="543" y2="206" class="ext"/>
@@ -116,10 +116,6 @@
     <line x1="1242" y1="772" x2="1274" y2="772" class="ext"/>
     <line x1="1250" y1="514" x2="1250" y2="772" class="dim"/>
     <text x="1242" y="643" class="dimtxt" text-anchor="middle" transform="rotate(-90 1242 643)">43</text>
-      
-    <path d="M336 514 L190 454" class="thin"/>
-    <circle cx="336" cy="514" r="4" fill="#121820"/>
-    <text x="198" y="459" class="tiny" text-anchor="start" >outer pier line in soil</text>
       
     <path d="M1164 514 L1295 454" class="thin"/>
     <circle cx="1164" cy="514" r="4" fill="#121820"/>

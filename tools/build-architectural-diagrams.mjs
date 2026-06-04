@@ -74,7 +74,7 @@ function titleBlock(no, title, subtitle) {
     <text x="64" y="1024" class="title">${esc(title)}</text>
     <text x="64" y="1052" class="note">${esc(subtitle)}</text>
     <text x="1190" y="1030" class="sheetno">${esc(no)}</text>
-    <text x="1190" y="1056" class="note">Side Yard Sauna · revised sidecar scheme · dimensions in inches</text>`;
+    <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>`;
 }
 
 function svg(no, title, subtitle, body, desc) {
@@ -199,8 +199,8 @@ function planSheet() {
       ${dimH(hotX, hotX + hotW, y - 22, "70 hot room")}
       ${dimH(sideX, sideX + sideW, y - 22, "60 sidecar")}
       ${dimH(padX, padX + padW, y + extD + 92, "120 existing DG pad")}
-      ${dimV(x - 52, y, y + extD, "96 exterior depth")}
-      ${dimV(x - 20, hotY, hotY + hotD, "84 clear interior depth")}
+      ${dimV(x - 64, y, y + extD, "96 exterior depth")}
+      ${dimV(x - 22, hotY, hotY + hotD, "84 clear interior depth")}
       ${leader(x + extW + 34, y + 32, x + extW + 86, y - 20, "roof/eaves must be designed separately", "tiny")}
       ${leader(x + extW + 34, y + extD - 40, x + extW + 86, y + extD + 6, "side extension lands on soil piers", "tiny")}
       ${text(142, 216, "soil beyond DG", "small")}
@@ -255,15 +255,14 @@ function foundationSheet() {
       ${text(cols[4] + 46, rows[2] + 8, "3", "label")}
       ${dimH(x, x + w, y - 60, "150 foundation platform")}
       ${dimH(padX, padX + padW, y + d + 70, "120 existing DG pad")}
-      ${dimV(x - 48, y, y + d, "98 foundation depth")}
-      ${dimV(x - 16, padY, padY + padD, "96 DG depth")}
+      ${dimV(x - 78, y, y + d, "98 foundation depth")}
+      ${dimV(x - 28, padY, padY + padD, "96 DG depth")}
       ${dimH(cols[0], cols[1], y - 22, "34 1/2 typ.")}
       ${dimH(cols[1], cols[2], y - 22, "34 1/2")}
       ${dimH(cols[2], cols[3], y - 22, "34 1/2")}
       ${dimH(cols[3], cols[4], y - 22, "34 1/2")}
       ${dimV(x + w + 50, rows[0], rows[1], "43")}
       ${dimV(x + w + 50, rows[1], rows[2], "43")}
-      ${leader(cols[0], rows[1], 190, rows[1] - 60, "outer pier line in soil", "tiny")}
       ${leader(cols[4], rows[1], x + w + 95, rows[1] - 60, "outer pier line in soil", "tiny")}
       ${text(x + w / 2, y + d + 118, "Use final pier depth, diameter, rebar, and inspection sequence from local code / site soil.", "note", "middle")}
       <g transform="translate(1235 220)">
@@ -316,12 +315,12 @@ function sectionSheet() {
       ${rect(clearBack - 3, floorY - 20 * s, 6, 11 * s, "", `fill="${blue}" stroke="${blue}" stroke-width="1"`)}
       ${rect(clearBack - 3, ceiling + 14 * s, 6, 10 * s, "", `fill="${blue}" stroke="${blue}" stroke-width="1"`)}
       ${text(clearFront - 22, floorY - 26 * s, "supply", "tiny", "end")}
-      ${text(clearBack + 18, floorY - 18 * s, "low exhaust", "tiny")}
-      ${text(clearBack + 18, ceiling + 19 * s, "drying vent", "tiny")}
+      ${text(clearBack - 10, floorY - 18 * s, "low exhaust", "tiny", "end")}
+      ${text(clearBack - 10, ceiling + 19 * s, "drying vent", "tiny", "end")}
       ${dimV(frontX - 52, floorY, ceiling, "96 finished ceiling target")}
-      ${dimV(clearBack + 64, upperY, ceiling, "45 top bench to ceiling")}
-      ${dimV(clearBack + 96, floorY, upperY, "51 upper bench")}
-      ${dimV(clearBack + 128, floorY, footY, "35 foot platform")}
+      ${dimV(clearBack + 82, upperY, ceiling, "45 top bench to ceiling")}
+      ${dimV(clearBack + 122, floorY, upperY, "51 upper bench")}
+      ${dimV(clearBack + 162, floorY, footY, "35 foot platform")}
       ${dimV(clearFront + 24, floorY, stepY, "17 lower step")}
       ${dimH(clearFront, clearBack, floorY + 54, "84 clear hot-room depth")}
       ${badge(clearBack - 12 * s, upperY - 18, "1")}

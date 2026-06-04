@@ -48,7 +48,7 @@
     <text x="64" y="1024" class="title">Front Elevation And Roof Control</text>
     <text x="64" y="1052" class="note">Single integrated shed form · two doors under one roof plane · DG pad shown dashed</text>
     <text x="1190" y="1030" class="sheetno">A301</text>
-    <text x="1190" y="1056" class="note">Side Yard Sauna · revised sidecar scheme · dimensions in inches</text>
+    <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
   
       <rect x="334" y="794" width="720" height="12" class="" fill="#efe5cf" stroke="#8c7b59" stroke-width="1.5" stroke-dasharray="8 6"/>
       <rect x="250" y="224" width="888" height="576" class="" fill="#f7f5ef" stroke="#121820" stroke-width="3"/>

@@ -48,7 +48,7 @@
     <text x="64" y="1024" class="title">Hot Room Section</text>
     <text x="64" y="1052" class="note">Section through hot room depth · bench heights, ceiling relationship, heater, and vent path</text>
     <text x="1190" y="1030" class="sheetno">A201</text>
-    <text x="1190" y="1056" class="note">Side Yard Sauna · revised sidecar scheme · dimensions in inches</text>
+    <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
   
       <rect x="250" y="204" width="576" height="576" class="" fill="#fffdf8" stroke="#121820" stroke-width="4"/>
       <rect x="286" y="240" width="504" height="504" class="" fill="#fff7e6" stroke="#121820" stroke-width="1.5"/>
@@ -65,28 +65,28 @@
       <rect x="787" y="660" width="6" height="66" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
       <rect x="787" y="288" width="6" height="60" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
       <text x="264" y="624" class="tiny" text-anchor="end" >supply</text>
-      <text x="808" y="672" class="tiny" text-anchor="start" >low exhaust</text>
-      <text x="808" y="318" class="tiny" text-anchor="start" >drying vent</text>
+      <text x="780" y="672" class="tiny" text-anchor="end" >low exhaust</text>
+      <text x="780" y="318" class="tiny" text-anchor="end" >drying vent</text>
       
     <line x1="190" y1="780" x2="222" y2="780" class="ext"/>
     <line x1="190" y1="204" x2="222" y2="204" class="ext"/>
     <line x1="198" y1="780" x2="198" y2="204" class="dim"/>
     <text x="190" y="492" class="dimtxt" text-anchor="middle" transform="rotate(-90 190 492)">96 finished ceiling target</text>
       
-    <line x1="846" y1="474" x2="878" y2="474" class="ext"/>
-    <line x1="846" y1="204" x2="878" y2="204" class="ext"/>
-    <line x1="854" y1="474" x2="854" y2="204" class="dim"/>
-    <text x="846" y="339" class="dimtxt" text-anchor="middle" transform="rotate(-90 846 339)">45 top bench to ceiling</text>
+    <line x1="864" y1="474" x2="896" y2="474" class="ext"/>
+    <line x1="864" y1="204" x2="896" y2="204" class="ext"/>
+    <line x1="872" y1="474" x2="872" y2="204" class="dim"/>
+    <text x="864" y="339" class="dimtxt" text-anchor="middle" transform="rotate(-90 864 339)">45 top bench to ceiling</text>
       
-    <line x1="878" y1="780" x2="910" y2="780" class="ext"/>
-    <line x1="878" y1="474" x2="910" y2="474" class="ext"/>
-    <line x1="886" y1="780" x2="886" y2="474" class="dim"/>
-    <text x="878" y="627" class="dimtxt" text-anchor="middle" transform="rotate(-90 878 627)">51 upper bench</text>
+    <line x1="904" y1="780" x2="936" y2="780" class="ext"/>
+    <line x1="904" y1="474" x2="936" y2="474" class="ext"/>
+    <line x1="912" y1="780" x2="912" y2="474" class="dim"/>
+    <text x="904" y="627" class="dimtxt" text-anchor="middle" transform="rotate(-90 904 627)">51 upper bench</text>
       
-    <line x1="910" y1="780" x2="942" y2="780" class="ext"/>
-    <line x1="910" y1="570" x2="942" y2="570" class="ext"/>
-    <line x1="918" y1="780" x2="918" y2="570" class="dim"/>
-    <text x="910" y="675" class="dimtxt" text-anchor="middle" transform="rotate(-90 910 675)">35 foot platform</text>
+    <line x1="944" y1="780" x2="976" y2="780" class="ext"/>
+    <line x1="944" y1="570" x2="976" y2="570" class="ext"/>
+    <line x1="952" y1="780" x2="952" y2="570" class="dim"/>
+    <text x="944" y="675" class="dimtxt" text-anchor="middle" transform="rotate(-90 944 675)">35 foot platform</text>
       
     <line x1="302" y1="780" x2="334" y2="780" class="ext"/>
     <line x1="302" y1="678" x2="334" y2="678" class="ext"/>

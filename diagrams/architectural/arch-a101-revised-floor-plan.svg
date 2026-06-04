@@ -48,7 +48,7 @@
     <text x="64" y="1024" class="title">Revised Floor Plan</text>
     <text x="64" y="1052" class="note">Hot room 70 x 84 clear · sidecar storage 60 x 84 clear · exterior wall footprint 148 x 96</text>
     <text x="1190" y="1030" class="sheetno">A101</text>
-    <text x="1190" y="1056" class="note">Side Yard Sauna · revised sidecar scheme · dimensions in inches</text>
+    <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
   
       <rect x="92" y="190" width="180" height="576" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
       <rect x="274" y="204" width="900" height="588" class="" fill="url(#deck-hatch)" stroke="#4b5563" stroke-width="2" stroke-dasharray="8 6"/>
@@ -103,15 +103,15 @@
     <line x1="364" y1="878" x2="1084" y2="878" class="dim"/>
     <text x="724" y="870" class="dimtxt" text-anchor="middle" >120 existing DG pad</text>
       
-    <line x1="220" y1="210" x2="252" y2="210" class="ext"/>
-    <line x1="220" y1="786" x2="252" y2="786" class="ext"/>
-    <line x1="228" y1="210" x2="228" y2="786" class="dim"/>
-    <text x="220" y="498" class="dimtxt" text-anchor="middle" transform="rotate(-90 220 498)">96 exterior depth</text>
+    <line x1="208" y1="210" x2="240" y2="210" class="ext"/>
+    <line x1="208" y1="786" x2="240" y2="786" class="ext"/>
+    <line x1="216" y1="210" x2="216" y2="786" class="dim"/>
+    <text x="208" y="498" class="dimtxt" text-anchor="middle" transform="rotate(-90 208 498)">96 exterior depth</text>
       
-    <line x1="252" y1="246" x2="284" y2="246" class="ext"/>
-    <line x1="252" y1="750" x2="284" y2="750" class="ext"/>
-    <line x1="260" y1="246" x2="260" y2="750" class="dim"/>
-    <text x="252" y="498" class="dimtxt" text-anchor="middle" transform="rotate(-90 252 498)">84 clear interior depth</text>
+    <line x1="250" y1="246" x2="282" y2="246" class="ext"/>
+    <line x1="250" y1="750" x2="282" y2="750" class="ext"/>
+    <line x1="258" y1="246" x2="258" y2="750" class="dim"/>
+    <text x="250" y="498" class="dimtxt" text-anchor="middle" transform="rotate(-90 250 498)">84 clear interior depth</text>
       
     <path d="M1202 242 L1254 190" class="thin"/>
     <circle cx="1202" cy="242" r="4" fill="#121820"/>
