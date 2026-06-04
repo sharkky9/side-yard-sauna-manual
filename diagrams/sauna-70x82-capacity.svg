@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Capacity read for compact 70 by 82 inch sauna</title>
+  <desc id="desc">A simplified plan for a compact finished hot room around seventy inches wide and eighty two inches deep. It shows a fifty eight inch upper bench, smaller foot bench, smaller step, centered thirty inch door, and a twenty eight by twenty eight inch heater clearance zone. The diagram marks two comfortable seats and a possible third guest seat.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .title { font-size: 30px; font-weight: 700; }
+      .sub { font-size: 17px; fill: #475569; }
+      .label { font-size: 17px; font-weight: 650; }
+      .note { font-size: 14px; fill: #475569; }
+      .room { fill: #fffaf3; stroke: #111827; stroke-width: 6; }
+      .upper { fill: #f1c99a; stroke: #9a6a36; stroke-width: 2.5; }
+      .foot { fill: #f8e4c8; stroke: #b7793d; stroke-width: 2.2; }
+      .step { fill: #fcefdc; stroke: #b7793d; stroke-width: 2; }
+      .clear { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 7; }
+      .heater { fill: #fee2e2; stroke: #b91c1c; stroke-width: 2.5; }
+      .door { fill: #dbeafe; stroke: #2563eb; stroke-width: 3; }
+      .person-good { fill: #dcfce7; stroke: #15803d; stroke-width: 2.5; }
+      .person-guest { fill: #fef9c3; stroke: #a16207; stroke-width: 2.5; stroke-dasharray: 8 6; }
+      .dim { fill: none; stroke: #334155; stroke-width: 2.5; marker-start: url(#arrow); marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#ffffff"/>
+  <text x="80" y="74" class="title">Capacity read: compact 70 in x 82 in hot room</text>
+  <text x="80" y="105" class="sub">This is a two-person sauna that can host a third. Four adults would be crowding it.</text>
+
+  <g transform="translate(210 180) scale(8)">
+    <rect x="0" y="0" width="70" height="82" rx="1" class="room"/>
+    <rect x="12" y="0" width="58" height="24" rx="1" class="upper"/>
+    <rect x="12" y="24" width="58" height="18" rx="1" class="foot"/>
+    <rect x="24" y="42" width="30" height="12" rx="1" class="step"/>
+    <rect x="18" y="54" width="30" height="18" rx="1" class="clear"/>
+    <rect x="42" y="54" width="28" height="28" rx="1" class="heater"/>
+    <rect x="20" y="82" width="30" height="7" rx="1" class="door"/>
+    <path d="M 20 82 Q 35 66 50 82" fill="none" stroke="#2563eb" stroke-width="0.35"/>
+
+    <circle cx="29" cy="12" r="5.5" class="person-good"/>
+    <circle cx="47" cy="12" r="5.5" class="person-good"/>
+    <circle cx="62" cy="33" r="5" class="person-guest"/>
+  </g>
+
+  <line x1="210" y1="880" x2="770" y2="880" class="dim"/>
+  <text x="445" y="915" class="label">70 in finished width</text>
+  <line x1="820" y1="180" x2="820" y2="836" class="dim"/>
+  <text x="842" y="520" class="label">82 in depth</text>
+
+  <rect x="870" y="280" width="230" height="235" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="900" y="320" class="label">Capacity</text>
+  <text x="900" y="358" class="note">2 adults: comfortable</text>
+  <text x="900" y="386" class="note">3 adults: workable</text>
+  <text x="900" y="414" class="note">4 adults: cramped</text>
+  <text x="900" y="465" class="note">58 in upper bench is</text>
+  <text x="900" y="490" class="note">the limiting dimension.</text>
+
+  <rect x="870" y="565" width="230" height="180" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+  <text x="900" y="605" class="label">Heater fit</text>
+  <text x="900" y="642" class="note">28 x 28 in clearance</text>
+  <text x="900" y="670" class="note">is a sane planning</text>
+  <text x="900" y="698" class="note">allowance for HIVE Mini.</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400" role="img" aria-labelledby="title desc">
+  <title id="title">Compact outdoor sauna construction plan with storage sidecar</title>
+  <desc id="desc">Plan diagram for a compact outdoor sauna with a storage sidecar. The hot room remains seventy inches by eighty two inches finished inside. The total exterior wall footprint is about one hundred sixteen inches wide by ninety four inches deep, with a twenty eight inch clear interior storage sidecar under the same roof.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .title { font-size: 30px; font-weight: 700; }
+      .sub { font-size: 17px; fill: #475569; }
+      .label { font-size: 17px; font-weight: 650; }
+      .note { font-size: 14px; fill: #475569; }
+      .wall { fill: #111827; }
+      .room { fill: #fffaf3; stroke: #7c2d12; stroke-width: 2; }
+      .closet { fill: #eef2ff; stroke: #4338ca; stroke-width: 2; }
+      .bench { fill: #f1c99a; stroke: #9a6a36; stroke-width: 2.5; }
+      .foot { fill: #f8e4c8; stroke: #b7793d; stroke-width: 2.2; }
+      .step { fill: #fcefdc; stroke: #b7793d; stroke-width: 2; }
+      .landing { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 7; }
+      .heater { fill: #fee2e2; stroke: #b91c1c; stroke-width: 3; }
+      .door { fill: #dbeafe; stroke: #2563eb; stroke-width: 3; }
+      .closetdoor { fill: #e0e7ff; stroke: #4338ca; stroke-width: 3; }
+      .rough { fill: none; stroke: #2563eb; stroke-width: 2; stroke-dasharray: 8 6; }
+      .dim { fill: none; stroke: #334155; stroke-width: 2.5; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .shelf { fill: #dbeafe; stroke: #334155; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="1200" fill="#ffffff"/>
+  <text x="70" y="72" class="title">Sauna plus storage sidecar</text>
+  <text x="70" y="104" class="sub">Same 70 in x 82 in hot room, with a cold exterior closet under the same roof.</text>
+
+  <g transform="translate(180 175) scale(7)">
+    <rect x="0" y="0" width="116" height="94" rx="1" class="wall"/>
+    <rect x="6" y="6" width="70" height="82" rx="0.7" class="room"/>
+    <rect x="82" y="6" width="28" height="82" rx="0.7" class="closet"/>
+
+    <rect x="18" y="6" width="58" height="24" rx="0.7" class="bench"/>
+    <rect x="6" y="30" width="12" height="34" rx="0.7" class="bench"/>
+    <rect x="18" y="30" width="58" height="18" rx="0.7" class="foot"/>
+    <rect x="30" y="48" width="30" height="12" rx="0.7" class="step"/>
+    <rect x="24" y="60" width="30" height="18" rx="0.7" class="landing"/>
+    <rect x="48" y="60" width="28" height="28" rx="0.7" class="heater"/>
+
+    <rect x="31" y="88" width="32" height="6" rx="0.4" class="rough"/>
+    <rect x="32" y="94" width="30" height="7" rx="0.7" class="door"/>
+    <path d="M 32 94 Q 47 78 62 94" fill="none" stroke="#2563eb" stroke-width="0.35"/>
+
+    <rect x="88" y="15" width="16" height="6" rx="0.5" class="shelf"/>
+    <rect x="88" y="28" width="16" height="6" rx="0.5" class="shelf"/>
+    <rect x="88" y="41" width="16" height="6" rx="0.5" class="shelf"/>
+    <rect x="86" y="88" width="20" height="6" rx="0.5" class="closetdoor"/>
+    <path d="M 86 88 Q 96 77 106 88" fill="none" stroke="#4338ca" stroke-width="0.35"/>
+  </g>
+
+  <line x1="180" y1="865" x2="992" y2="865" class="dim"/>
+  <text x="514" y="902" class="label">116 in exterior wall footprint</text>
+  <line x1="1040" y1="175" x2="1040" y2="833" class="dim"/>
+  <text x="1064" y="512" class="label">94 in exterior depth</text>
+
+  <rect x="1085" y="270" width="250" height="255" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="1115" y="310" class="label">Sidecar version</text>
+  <text x="1115" y="350" class="note">Total siding footprint: 116 x 94 in</text>
+  <text x="1115" y="378" class="note">Foundation deck: about 118 x 96 in</text>
+  <text x="1115" y="406" class="note">Storage clear: about 28 x 82 in</text>
+  <text x="1115" y="450" class="note">Fits a 10 ft pad tightly.</text>
+  <text x="1115" y="478" class="note">Use very restrained eaves.</text>
+</svg>

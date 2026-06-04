@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">102 by 78 inch sauna plan feedback</title>
+  <desc id="desc">A cleaned plan for a finished hot room that is one hundred two inches wide and seventy eight inches deep. It shows a centered thirty inch door, a right-front eighteen inch heater, a twenty four inch upper bench, an eighteen inch mid bench, a lower step, and the clear entry zone.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .title { font-size: 28px; font-weight: 700; }
+      .sub { font-size: 16px; fill: #475569; }
+      .label { font-size: 17px; font-weight: 650; }
+      .note { font-size: 14px; fill: #475569; }
+      .small { font-size: 13px; fill: #475569; }
+      .room { fill: #fffaf3; stroke: #111827; stroke-width: 6; }
+      .upper { fill: #f1c99a; stroke: #9a6a36; stroke-width: 2.5; }
+      .mid { fill: #f8e4c8; stroke: #b7793d; stroke-width: 2.2; }
+      .step { fill: #fcefdc; stroke: #b7793d; stroke-width: 2; }
+      .clear { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 7; }
+      .heater { fill: #fee2e2; stroke: #b91c1c; stroke-width: 2.5; }
+      .guard { fill: none; stroke: #b91c1c; stroke-width: 2; stroke-dasharray: 8 7; }
+      .rail { fill: none; stroke: #7f1d1d; stroke-width: 2; stroke-dasharray: 3 8; }
+      .door { fill: #dbeafe; stroke: #2563eb; stroke-width: 3; }
+      .dim { fill: none; stroke: #334155; stroke-width: 2.5; marker-start: url(#arrow); marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="#ffffff"/>
+  <text x="70" y="54" class="title">Clean read of your 102 in x 78 in hot room</text>
+  <text x="70" y="82" class="sub">Finished interior plan. Front is at the bottom; door is centered; heater is on the right.</text>
+
+  <g transform="translate(130 135)">
+    <rect x="0" y="0" width="714" height="546" rx="4" class="room"/>
+
+    <rect x="0" y="0" width="714" height="168" rx="4" class="upper"/>
+    <text x="262" y="91" class="label">24 in upper bench</text>
+
+    <rect x="0" y="168" width="168" height="258" rx="4" class="upper"/>
+    <text x="36" y="292" class="label">return</text>
+    <text x="31" y="316" class="note">4th seat</text>
+
+    <rect x="168" y="168" width="378" height="126" rx="4" class="mid"/>
+    <text x="263" y="237" class="label">18 in mid bench</text>
+
+    <rect x="252" y="294" width="210" height="84" rx="4" class="step"/>
+    <text x="284" y="342" class="label">lower step</text>
+
+    <rect x="168" y="378" width="294" height="126" rx="4" class="clear"/>
+    <text x="228" y="448" class="label">clear landing</text>
+
+    <circle cx="581" cy="441" r="94" class="guard"/>
+    <circle cx="581" cy="441" r="111" class="rail"/>
+    <circle cx="581" cy="441" r="63" class="heater"/>
+    <text x="553" y="447" class="label">18 in</text>
+    <text x="548" y="470" class="note">heater</text>
+    <text x="470" y="360" class="small">27 in min envelope</text>
+    <text x="492" y="383" class="small">rail may be larger</text>
+
+    <rect x="252" y="546" width="210" height="54" rx="5" class="door"/>
+    <path d="M 252 546 Q 357 438 462 546" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="299" y="528" class="label">30 in door</text>
+  </g>
+
+  <line x1="130" y1="715" x2="844" y2="715" class="dim"/>
+  <text x="452" y="745" class="label">102 in finished width</text>
+  <line x1="880" y1="135" x2="880" y2="681" class="dim"/>
+  <text x="900" y="415" class="label">78 in depth</text>
+</svg>

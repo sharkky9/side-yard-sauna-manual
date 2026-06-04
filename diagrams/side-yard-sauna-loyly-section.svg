@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Side-yard sauna bench and loyly section</title>
+  <desc id="desc">Interior section showing a compact high-bench sauna with a HUUM Hive Mini heater, upper bench, foot platform, flat ceiling, controlled vents, and feet above the stone line.</desc>
+  <defs>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .title { font-size: 28px; font-weight: 700; }
+      .sub { font-size: 16px; fill: #475569; }
+      .label { font-size: 17px; font-weight: 650; }
+      .note { font-size: 14px; fill: #475569; }
+      .small { font-size: 13px; fill: #475569; }
+      .room { fill: #f8fafc; stroke: #111827; stroke-width: 6; }
+      .hot { fill: #fee2e2; opacity: 0.48; }
+      .bench { fill: #f1c99a; stroke: #9a6a36; stroke-width: 2.5; }
+      .foot { fill: #f8e4c8; stroke: #b7793d; stroke-width: 2; }
+      .heater { fill: #fee2e2; stroke: #b91c1c; stroke-width: 2.5; }
+      .stone { fill: #6b7280; stroke: #374151; stroke-width: 1.5; }
+      .duck { fill: #f5d7ad; stroke: #9a6a36; stroke-width: 1.5; }
+      .airhot { fill: none; stroke: #dc2626; stroke-width: 4; marker-end: url(#arrow-red); }
+      .airfresh { fill: none; stroke: #2563eb; stroke-width: 3.5; marker-end: url(#arrow-blue); }
+      .dim { fill: none; stroke: #334155; stroke-width: 2.5; marker-start: url(#arrow-slate); marker-end: url(#arrow-slate); }
+      .line { stroke: #64748b; stroke-width: 2; stroke-dasharray: 7 6; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="#ffffff"/>
+  <text x="70" y="54" class="title">Bench section: make the small room feel like a real sauna</text>
+  <text x="70" y="82" class="sub">Interior side section. The room can be compact if the feet, stones, ceiling, and air path line up.</text>
+
+  <rect x="185" y="125" width="770" height="585" rx="4" class="room"/>
+  <rect x="185" y="125" width="770" height="210" class="hot"/>
+  <text x="455" y="162" class="label">hot air and steam zone</text>
+
+  <rect x="525" y="292" width="320" height="46" rx="4" class="bench"/>
+  <text x="585" y="282" class="label">upper bench 50-52 in</text>
+
+  <rect x="500" y="414" width="355" height="42" rx="4" class="foot"/>
+  <text x="570" y="486" class="label">foot platform 34-36 in</text>
+
+  <rect x="218" y="602" width="690" height="24" class="duck"/>
+  <text x="430" y="656" class="label">removable duckboards over solid floor</text>
+
+  <rect x="265" y="430" width="130" height="172" rx="22" class="heater"/>
+  <ellipse cx="330" cy="454" rx="50" ry="16" class="stone"/>
+  <ellipse cx="316" cy="477" rx="35" ry="12" class="stone"/>
+  <ellipse cx="348" cy="496" rx="38" ry="13" class="stone"/>
+  <text x="247" y="414" class="label">HUUM HIVE Mini</text>
+  <text x="270" y="630" class="small">about 29.6 in high</text>
+
+  <line x1="218" y1="430" x2="910" y2="430" class="line"/>
+  <text x="655" y="420" class="note">feet stay above stone line</text>
+
+  <path d="M 315 430 C 340 342, 472 256, 642 218" class="airhot"/>
+  <path d="M 650 218 C 760 204, 835 222, 880 268" class="airhot"/>
+  <path d="M 224 545 C 256 524, 285 509, 318 500" class="airfresh"/>
+  <path d="M 875 500 C 790 516, 720 516, 650 500" class="airfresh"/>
+
+  <rect x="205" y="530" width="45" height="28" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="235" y="575" class="note">controlled intake near heater</text>
+
+  <rect x="865" y="475" width="55" height="32" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="770" y="548" class="note">low exhaust under bench</text>
+
+  <rect x="865" y="170" width="55" height="28" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="770" y="190" class="note">high drying vent</text>
+
+  <line x1="1005" y1="125" x2="1005" y2="710" class="dim"/>
+  <text x="1022" y="430" class="label">94-96 in</text>
+  <line x1="960" y1="338" x2="960" y2="125" class="dim"/>
+  <text x="975" y="242" class="small">44-46 in above bench</text>
+</svg>

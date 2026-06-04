@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760" role="img">
+  <title>Centered-door sauna plan, simplified</title>
+  <desc>A simplified top-view sauna plan showing the centered door and two windows on the front wall, heater on the left front side, back-wall bench, foot platform, bench return with foot support, and a controlled front-right scupper.</desc>
+  <defs>
+    <marker id="arrow-water-v3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-dim-v3" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <pattern id="duckboard-v3" width="16" height="16" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="16" y2="0" stroke="#d8ad78" stroke-width="3"/>
+    </pattern>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        fill: #18212f;
+      }
+      .title { font-size: 31px; font-weight: 760; letter-spacing: 0; }
+      .subtitle { font-size: 16px; fill: #556579; }
+      .label { font-size: 17px; font-weight: 700; }
+      .note { font-size: 14px; fill: #556579; font-weight: 560; }
+      .tiny { font-size: 12px; fill: #64748b; font-weight: 560; }
+      .floor { fill: #fbf7ef; stroke: #e5d8c6; stroke-width: 1.5; }
+      .wall { fill: none; stroke: #18212f; stroke-width: 14; stroke-linecap: square; }
+      .glass { stroke: #2f80d1; stroke-width: 8; stroke-linecap: round; }
+      .door { fill: none; stroke: #2f80d1; stroke-width: 2.8; }
+      .upper { fill: #e8b86f; stroke: #8b5a21; stroke-width: 2.8; }
+      .lower { fill: #f2d19f; stroke: #a46c2c; stroke-width: 2.2; }
+      .duck { fill: url(#duckboard-v3); stroke: #c98f48; stroke-width: 1.8; opacity: .7; }
+      .heater { fill: #f6c9bf; stroke: #9f3f31; stroke-width: 2.8; }
+      .guard { fill: #fff3ef; stroke: #c96d60; stroke-width: 1.6; stroke-dasharray: 8 7; }
+      .water { fill: none; stroke: #2563eb; stroke-width: 4; marker-end: url(#arrow-water-v3); }
+      .water-soft { fill: none; stroke: #93c5fd; stroke-width: 3; marker-end: url(#arrow-water-v3); opacity: .82; }
+      .drain { fill: #bfdbfe; stroke: #2563eb; stroke-width: 2.8; }
+      .dim { fill: none; stroke: #64748b; stroke-width: 2; marker-start: url(#arrow-dim-v3); marker-end: url(#arrow-dim-v3); }
+      .callout-line { stroke: #94a3b8; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1120" height="760" fill="#f6f1e9"/>
+  <text x="66" y="58" class="title">Centered-door sauna plan</text>
+  <text x="66" y="86" class="subtitle">One clean layout diagram. Height, sill, and drain construction details should be separate drawings.</text>
+
+  <rect x="90" y="126" width="850" height="500" rx="8" class="floor"/>
+
+  <path class="wall" d="M 90 126 H 940"/>
+  <path class="wall" d="M 90 126 V 626"/>
+  <path class="wall" d="M 940 126 V 626"/>
+  <path class="wall" d="M 90 626 H 220 M 370 626 H 470 M 590 626 H 650 M 800 626 H 940"/>
+  <line x1="220" y1="626" x2="370" y2="626" class="glass"/>
+  <line x1="650" y1="626" x2="800" y2="626" class="glass"/>
+  <path d="M 470 626 V 570 M 590 626 V 570 M 470 570 Q 530 516 590 570" class="door"/>
+
+  <rect x="132" y="166" width="766" height="86" rx="8" class="upper"/>
+  <rect x="132" y="286" width="766" height="74" rx="8" class="lower"/>
+  <rect x="132" y="398" width="300" height="54" rx="8" class="duck"/>
+
+  <rect x="125" y="490" width="180" height="105" rx="22" class="guard"/>
+  <rect x="151" y="512" width="128" height="67" rx="18" class="heater"/>
+
+  <rect x="755" y="395" width="126" height="180" rx="8" class="upper"/>
+  <rect x="712" y="425" width="33" height="126" rx="6" class="lower"/>
+
+  <rect x="889" y="593" width="34" height="25" rx="5" class="drain"/>
+  <path d="M 420 443 C 560 476, 735 540, 906 608" class="water-soft"/>
+  <path d="M 575 380 C 715 440, 835 546, 906 608" class="water"/>
+
+  <text class="label">
+    <tspan x="430" y="216">upper bench</tspan>
+    <tspan x="421" y="331">foot platform</tspan>
+    <tspan x="183" y="554">heater</tspan>
+    <tspan x="781" y="465">bench</tspan>
+    <tspan x="781" y="488">return</tspan>
+    <tspan x="880" y="583">scupper</tspan>
+  </text>
+
+  <text class="note">
+    <tspan x="470" y="116">back wall</tspan>
+    <tspan x="404" y="665">front / Mt. Tam view</tspan>
+    <tspan x="261" y="654">window</tspan>
+    <tspan x="505" y="688">centered door</tspan>
+    <tspan x="690" y="654">window</tspan>
+    <tspan x="645" y="418">foot support</tspan>
+  </text>
+
+  <path d="M 714 457 L 682 430" class="callout-line"/>
+
+  <line x1="90" y1="708" x2="940" y2="708" class="dim"/>
+  <line x1="988" y1="126" x2="988" y2="626" class="dim"/>
+  <text class="tiny">
+    <tspan x="489" y="733">about 8 ft</tspan>
+    <tspan x="1002" y="382">about 8 ft</tspan>
+    <tspan x="724" y="605">slab falls to front-right low point</tspan>
+  </text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Compact outdoor sauna construction plan without sidecar</title>
+  <desc id="desc">Plan diagram for a compact outdoor sauna with a seventy inch by eighty two inch finished interior, approximately eighty two inch by ninety four inch exterior wall footprint, centered thirty inch door with thirty two inch rough opening, L-shaped upper bench, foot bench, lower step, and twenty eight by twenty eight inch heater clearance zone.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .title { font-size: 30px; font-weight: 700; }
+      .sub { font-size: 17px; fill: #475569; }
+      .label { font-size: 17px; font-weight: 650; }
+      .note { font-size: 14px; fill: #475569; }
+      .wall { fill: #111827; }
+      .room { fill: #fffaf3; stroke: #7c2d12; stroke-width: 2; }
+      .bench { fill: #f1c99a; stroke: #9a6a36; stroke-width: 2.5; }
+      .foot { fill: #f8e4c8; stroke: #b7793d; stroke-width: 2.2; }
+      .step { fill: #fcefdc; stroke: #b7793d; stroke-width: 2; }
+      .landing { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 7; }
+      .heater { fill: #fee2e2; stroke: #b91c1c; stroke-width: 3; }
+      .door { fill: #dbeafe; stroke: #2563eb; stroke-width: 3; }
+      .rough { fill: none; stroke: #2563eb; stroke-width: 2; stroke-dasharray: 8 6; }
+      .dim { fill: none; stroke: #334155; stroke-width: 2.5; marker-start: url(#arrow); marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#ffffff"/>
+  <text x="70" y="72" class="title">Sauna-only footprint</text>
+  <text x="70" y="104" class="sub">Finished hot room: 70 in x 82 in. Planning wall build-up: 6 in each side.</text>
+
+  <g transform="translate(250 175) scale(7)">
+    <rect x="0" y="0" width="82" height="94" rx="1" class="wall"/>
+    <rect x="6" y="6" width="70" height="82" rx="0.7" class="room"/>
+    <rect x="18" y="6" width="58" height="24" rx="0.7" class="bench"/>
+    <rect x="6" y="30" width="12" height="34" rx="0.7" class="bench"/>
+    <rect x="18" y="30" width="58" height="18" rx="0.7" class="foot"/>
+    <rect x="30" y="48" width="30" height="12" rx="0.7" class="step"/>
+    <rect x="24" y="60" width="30" height="18" rx="0.7" class="landing"/>
+    <rect x="48" y="60" width="28" height="28" rx="0.7" class="heater"/>
+
+    <rect x="31" y="88" width="32" height="6" rx="0.4" class="rough"/>
+    <rect x="32" y="94" width="30" height="7" rx="0.7" class="door"/>
+    <path d="M 32 94 Q 47 78 62 94" fill="none" stroke="#2563eb" stroke-width="0.35"/>
+
+    <text x="35" y="19" class="label" transform="scale(0.142857)">24 in upper bench</text>
+  </g>
+
+  <line x1="250" y1="865" x2="824" y2="865" class="dim"/>
+  <text x="468" y="902" class="label">82 in exterior wall footprint</text>
+  <line x1="870" y1="175" x2="870" y2="833" class="dim"/>
+  <text x="894" y="512" class="label">94 in exterior depth</text>
+
+  <rect x="875" y="635" width="245" height="215" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="905" y="675" class="label">Build envelope</text>
+  <text x="905" y="714" class="note">Siding footprint: 82 x 94 in</text>
+  <text x="905" y="742" class="note">Foundation deck: about 84 x 96 in</text>
+  <text x="905" y="770" class="note">Roof: keep eaves tight on 8 ft pad</text>
+  <text x="905" y="814" class="note">Door RO: 32 x 82 in</text>
+</svg>

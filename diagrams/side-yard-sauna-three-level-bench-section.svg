@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Three-level sauna bench section</title>
+  <desc id="desc">Interior section for a compact outdoor sauna. The upper bench is twenty four inches deep, the mid bench is eighteen inches deep and acts as the foot bench, and the lower level is a utilitarian step. The foot bench sits above the heater stone line.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="air" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .title { font-size: 28px; font-weight: 700; }
+      .sub { font-size: 16px; fill: #475569; }
+      .label { font-size: 17px; font-weight: 650; }
+      .note { font-size: 14px; fill: #475569; }
+      .small { font-size: 13px; fill: #475569; }
+      .room { fill: #f8fafc; stroke: #111827; stroke-width: 6; }
+      .hotzone { fill: #fee2e2; opacity: 0.42; }
+      .bench { fill: #f1c99a; stroke: #9a6a36; stroke-width: 2.5; }
+      .mid { fill: #f8e4c8; stroke: #b7793d; stroke-width: 2.2; }
+      .step { fill: #fcefdc; stroke: #b7793d; stroke-width: 2; }
+      .floor { fill: #e5e7eb; stroke: #64748b; stroke-width: 2; }
+      .heater { fill: #fee2e2; stroke: #b91c1c; stroke-width: 2.5; }
+      .stone { fill: #6b7280; stroke: #374151; stroke-width: 1.4; }
+      .dim { fill: none; stroke: #334155; stroke-width: 2.3; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .guide { stroke: #64748b; stroke-width: 2; stroke-dasharray: 7 6; }
+      .airflow { fill: none; stroke: #dc2626; stroke-width: 4; marker-end: url(#air); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="#ffffff"/>
+  <text x="70" y="54" class="title">Three-level bench stack</text>
+  <text x="70" y="82" class="sub">The upper bench is the real seat. The mid bench is the foot bench. The lower level is just a step.</text>
+
+  <rect x="165" y="135" width="760" height="555" rx="4" class="room"/>
+  <rect x="165" y="135" width="760" height="215" class="hotzone"/>
+  <text x="430" y="170" class="label">best heat zone</text>
+
+  <rect x="185" y="650" width="720" height="28" rx="3" class="floor"/>
+  <text x="395" y="724" class="label">removable duckboards over solid sloped floor</text>
+
+  <rect x="595" y="392" width="260" height="50" rx="4" class="bench"/>
+  <text x="642" y="384" class="label">upper bench</text>
+  <text x="660" y="423" class="note">24 in deep</text>
+
+  <rect x="475" y="472" width="205" height="44" rx="4" class="mid"/>
+  <text x="501" y="462" class="label">mid bench</text>
+  <text x="505" y="501" class="note">18 in foot bench</text>
+
+  <rect x="380" y="560" width="130" height="38" rx="4" class="step"/>
+  <text x="396" y="551" class="label">lower step</text>
+  <text x="393" y="585" class="small">10-12 in tread</text>
+
+  <rect x="248" y="503" width="108" height="147" rx="18" class="heater"/>
+  <ellipse cx="302" cy="528" rx="42" ry="13" class="stone"/>
+  <ellipse cx="286" cy="551" rx="33" ry="11" class="stone"/>
+  <ellipse cx="320" cy="570" rx="35" ry="12" class="stone"/>
+  <text x="235" y="487" class="label">HUUM HIVE Mini</text>
+
+  <line x1="220" y1="503" x2="880" y2="503" class="guide"/>
+  <text x="700" y="493" class="note">feet above stones</text>
+
+  <path d="M 310 505 C 368 395, 488 302, 650 242" class="airflow"/>
+  <path d="M 650 242 C 735 218, 812 230, 865 282" class="airflow"/>
+
+  <line x1="965" y1="135" x2="965" y2="650" class="dim"/>
+  <text x="982" y="400" class="label">94-96 in</text>
+  <line x1="915" y1="392" x2="915" y2="135" class="dim"/>
+  <text x="932" y="270" class="small">44-46 in</text>
+  <line x1="875" y1="472" x2="875" y2="650" class="dim"/>
+  <text x="892" y="565" class="small">34-36 in</text>
+  <line x1="835" y1="560" x2="835" y2="650" class="dim"/>
+  <text x="852" y="611" class="small">16-18 in</text>
+
+  <line x1="595" y1="360" x2="855" y2="360" class="dim"/>
+  <text x="700" y="350" class="small">24 in</text>
+  <line x1="475" y1="535" x2="680" y2="535" class="dim"/>
+  <text x="552" y="560" class="small">18 in</text>
+
+</svg>
