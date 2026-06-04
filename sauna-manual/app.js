@@ -365,7 +365,7 @@ const bomItems = [
 
 const assemblySheets = [
   {
-    title: "Sheet A: Site fit and utility clearance",
+    title: "Sheet A / A101: Site fit and utility clearance",
     version: "all",
     diagram: "../diagrams/architectural/arch-a101-revised-floor-plan.svg",
     parts: ["stakes", "string", "spray paint", "panel-clearance tape", "landing mockup"],
@@ -378,7 +378,7 @@ const assemblySheets = [
     hold: "Do not dig until panel clearance, utility locate, door swing, roof discharge, and sidecar fit are physically marked."
   },
   {
-    title: "Sheet B: Pier grid and platform",
+    title: "Sheet B / S101: Pier grid and platform",
     version: "all",
     diagram: "../diagrams/architectural/arch-s101-foundation-pier-grid.svg",
     parts: ["12 in sonotubes", "6x6 PT posts", "4x6 PT beams", "2x8 PT joists", "rodent mesh"],
@@ -387,12 +387,12 @@ const assemblySheets = [
       "Sidecar platform: about 150 x 98 in with 15 piers, 5 beam lines x 3 rows.",
       "Use front-to-back 4x6 beams over pier rows; run 2x8 joists left-right across the platform.",
       "Layout seven field joists plus front/back rim joists for 12 in layout lines over the 98 in sidecar platform depth.",
-      "Block under the heater, wall lines, bench loads, and sidecar divider if used."
+      "Use the S101 dashed overlays to locate wall, divider, heater, bench, and threshold blocking zones before subfloor."
     ],
     hold: "Do not install subfloor until diagonals match within 1/8-1/4 in, joist crowns are consistent, and the heater corner is blocked."
   },
   {
-    title: "Sheet C: Floor pan and wall base",
+    title: "Sheet C / A401: Floor pan and wall base",
     version: "all",
     diagram: "../diagrams/architectural/arch-a401-floor-wall-base-detail.svg",
     parts: ["3/4 in exterior subfloor", "sloped substrate", "cement board or mud bed", "waterproofing", "tile", "base flashing"],
@@ -406,7 +406,7 @@ const assemblySheets = [
     hold: "Do not clad walls until the wall-base detail is visible, waterproofed, and inspectable."
   },
   {
-    title: "Sheet D: Weather shell, door, and roof water",
+    title: "Sheet D / A301: Weather shell, door, and roof water",
     version: "all",
     diagram: "../diagrams/architectural/arch-a301-front-elevation.svg",
     parts: ["WRB", "flashing tape", "sill pan", "drip cap", "rainscreen furring", "roof drip edge"],
@@ -420,7 +420,7 @@ const assemblySheets = [
     hold: "Do not install siding until door pan/head flashing, WRB laps, rainscreen exits, and roof drip path are complete."
   },
   {
-    title: "Sheet E: Electrical and sensor rough-in",
+    title: "Sheet E / E101: Electrical and sensor rough-in",
     version: "all",
     diagram: "../diagrams/architectural/arch-e101-heater-vent-control.svg",
     parts: ["conduit route", "controller box", "door sensor", "temperature sensor", "light/vent control"],
@@ -434,12 +434,13 @@ const assemblySheets = [
     hold: "Do not insulate until rough electrical, sensor paths, vent sleeves, and inspection requirements are complete."
   },
   {
-    title: "Sheet F: Bench support and heater guard",
+    title: "Sheet F / A201: Bench support and heater guard",
     version: "all",
     diagram: "../diagrams/architectural/arch-a201-hot-room-section.svg",
     parts: ["bench ledgers", "blocking", "upper bench slats", "foot platform", "lower step", "heater guard"],
     method: [
       "Mock up the upper bench, return, foot platform, lower step, heater, and door trim before cutting premium stock.",
+      "Treat A201 as the 96 in finished-ceiling case. If the finished ceiling lands at 94-95 in, lower the upper bench enough to preserve the 44-46 in top-bench-to-ceiling target.",
       "Support benches from structural blocking/ledgers, not from cladding.",
       "Seal any foil penetrations created for bench ledgers or guard fasteners.",
       "Round over every body-contact edge and keep slat gaps cleanable.",
@@ -448,7 +449,7 @@ const assemblySheets = [
     hold: "Do not final-fasten benches until two-person, three-person, and entry/exit posture are tested cold."
   },
   {
-    title: "Sheet G: Sidecar addendum",
+    title: "Sheet G / A101: Sidecar addendum",
     version: "sidecar",
     diagram: "../diagrams/architectural/arch-a101-revised-floor-plan.svg",
     parts: ["divider wall", "narrow exterior door", "shelf blocking", "high/low vents", "threshold flashing"],

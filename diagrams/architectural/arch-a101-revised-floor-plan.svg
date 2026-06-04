@@ -50,10 +50,11 @@
     <text x="1190" y="1030" class="sheetno">A101</text>
     <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
   
-      <rect x="92" y="190" width="180" height="576" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
+      <rect x="1000" y="204" width="186" height="588" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
       <rect x="274" y="204" width="900" height="588" class="" fill="url(#deck-hatch)" stroke="#4b5563" stroke-width="2" stroke-dasharray="8 6"/>
-      <rect x="364" y="210" width="720" height="576" class="" fill="#efe5cf" stroke="#8c7b59" stroke-width="2" stroke-dasharray="9 7"/>
-      <text x="724" y="242" class="small" text-anchor="middle" >existing compacted DG pad · 120 x 96</text>
+      <rect x="280" y="210" width="720" height="576" class="" fill="#efe5cf" stroke="#8c7b59" stroke-width="2" stroke-dasharray="9 7"/>
+      <text x="640" y="242" class="small" text-anchor="middle" >existing compacted DG pad · 120 x 96</text>
+      <text x="1090" y="242" class="small" text-anchor="middle" >soil beyond pad</text>
       <rect x="280" y="210" width="888" height="576" class="wall" />
       <rect x="316" y="246" width="420" height="504" class="cut" fill="#fff7e6"/>
       <rect x="736" y="246" width="36" height="504" class="wall" />
@@ -98,10 +99,10 @@
     <line x1="772" y1="188" x2="1132" y2="188" class="dim"/>
     <text x="952" y="180" class="dimtxt" text-anchor="middle" >60 sidecar</text>
       
-    <line x1="364" y1="856" x2="364" y2="886" class="ext"/>
-    <line x1="1084" y1="856" x2="1084" y2="886" class="ext"/>
-    <line x1="364" y1="878" x2="1084" y2="878" class="dim"/>
-    <text x="724" y="870" class="dimtxt" text-anchor="middle" >120 existing DG pad</text>
+    <line x1="280" y1="856" x2="280" y2="886" class="ext"/>
+    <line x1="1000" y1="856" x2="1000" y2="886" class="ext"/>
+    <line x1="280" y1="878" x2="1000" y2="878" class="dim"/>
+    <text x="640" y="870" class="dimtxt" text-anchor="middle" >120 existing DG pad</text>
       
     <line x1="208" y1="210" x2="240" y2="210" class="ext"/>
     <line x1="208" y1="786" x2="240" y2="786" class="ext"/>
@@ -117,17 +118,16 @@
     <circle cx="1202" cy="242" r="4" fill="#121820"/>
     <text x="1262" y="195" class="tiny" text-anchor="start" >roof/eaves must be designed separately</text>
       
-    <path d="M1202 746 L1254 792" class="thin"/>
-    <circle cx="1202" cy="746" r="4" fill="#121820"/>
-    <text x="1262" y="797" class="tiny" text-anchor="start" >side extension lands on soil piers</text>
-      <text x="142" y="216" class="small" text-anchor="start" >soil beyond DG</text>
+    <path d="M1180 746 L1246 792" class="thin"/>
+    <circle cx="1180" cy="746" r="4" fill="#121820"/>
+    <text x="1254" y="797" class="tiny" text-anchor="start" >sidecar-side extension lands on soil piers</text>
       <text x="724" y="918" class="label" text-anchor="middle" >Front / approach side</text>
       <line x1="634" y1="932" x2="814" y2="932" class="med"/>
       <path d="M814 932 l-18 -8 l0 16 z" fill="#121820"/>
       <g transform="translate(1240 208)">
         <text x="0" y="0" class="label" text-anchor="start" >Plan notes</text>
         <text x="0" y="38" class="note" text-anchor="start" >1. Sidecar is now a real 5 ft clear storage bay.</text>
-        <text x="0" y="70" class="note" text-anchor="start" >2. Wall footprint exceeds the 10 ft DG pad by 28 in.</text>
+        <text x="0" y="70" class="note" text-anchor="start" >2. Sidecar side extends 28 in beyond the DG pad.</text>
         <text x="0" y="102" class="note" text-anchor="start" >3. Hold hot-room width at 70 in; depth grows to 84 in.</text>
         <text x="0" y="134" class="note" text-anchor="start" >4. Heater remains on the right side of the hot room.</text>
         <text x="0" y="166" class="note" text-anchor="start" >5. Door and heater trim still get field verification.</text>

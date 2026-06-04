@@ -140,7 +140,7 @@ function planSheet() {
   const extD = 96 * s;
   const platformW = 150 * s;
   const platformD = 98 * s;
-  const padX = x + 14 * s;
+  const padX = x;
   const padY = y;
   const padW = 120 * s;
   const padD = 96 * s;
@@ -163,10 +163,11 @@ function planSheet() {
     "Revised Floor Plan",
     "Hot room 70 x 84 clear · sidecar storage 60 x 84 clear · exterior wall footprint 148 x 96",
     `
-      ${rect(92, 190, 180, 576, "", `fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"`)}
+      ${rect(padX + padW, y - s, platformW - padW + s, platformD, "", `fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"`)}
       ${rect(x - s, y - s, platformW, platformD, "", `fill="url(#deck-hatch)" stroke="#4b5563" stroke-width="2" stroke-dasharray="8 6"`)}
       ${rect(padX, padY, padW, padD, "", `fill="${dg}" stroke="#8c7b59" stroke-width="2" stroke-dasharray="9 7"`)}
       ${text(padX + padW / 2, padY + 32, "existing compacted DG pad · 120 x 96", "small", "middle")}
+      ${text(padX + padW + 15 * s, padY + 32, "soil beyond pad", "small", "middle")}
       ${rect(x, y, extW, extD, "wall")}
       ${rect(hotX, hotY, hotW, hotD, "cut", `fill="${hot}"`)}
       ${rect(divX, hotY, divW, hotD, "wall")}
@@ -202,15 +203,14 @@ function planSheet() {
       ${dimV(x - 64, y, y + extD, "96 exterior depth")}
       ${dimV(x - 22, hotY, hotY + hotD, "84 clear interior depth")}
       ${leader(x + extW + 34, y + 32, x + extW + 86, y - 20, "roof/eaves must be designed separately", "tiny")}
-      ${leader(x + extW + 34, y + extD - 40, x + extW + 86, y + extD + 6, "side extension lands on soil piers", "tiny")}
-      ${text(142, 216, "soil beyond DG", "small")}
+      ${leader(x + extW + 12, y + extD - 40, x + extW + 78, y + extD + 6, "sidecar-side extension lands on soil piers", "tiny")}
       ${text(x + extW / 2, y + extD + 132, "Front / approach side", "label", "middle")}
       ${line(x + extW / 2 - 90, y + extD + 146, x + extW / 2 + 90, y + extD + 146, "med")}
       <path d="M${x + extW / 2 + 90} ${y + extD + 146} l-18 -8 l0 16 z" fill="${ink}"/>
       <g transform="translate(1240 208)">
         ${text(0, 0, "Plan notes", "label")}
         ${text(0, 38, "1. Sidecar is now a real 5 ft clear storage bay.", "note")}
-        ${text(0, 70, "2. Wall footprint exceeds the 10 ft DG pad by 28 in.", "note")}
+        ${text(0, 70, "2. Sidecar side extends 28 in beyond the DG pad.", "note")}
         ${text(0, 102, "3. Hold hot-room width at 70 in; depth grows to 84 in.", "note")}
         ${text(0, 134, "4. Heater remains on the right side of the hot room.", "note")}
         ${text(0, 166, "5. Door and heater trim still get field verification.", "note")}
@@ -225,10 +225,18 @@ function foundationSheet() {
   const y = 220;
   const w = 150 * s;
   const d = 98 * s;
-  const padX = x + 15 * s;
+  const padX = x;
   const padY = y + 1 * s;
   const padW = 120 * s;
   const padD = 96 * s;
+  const wallX = x + 1 * s;
+  const wallY = y + 1 * s;
+  const wallW = 148 * s;
+  const wallD = 96 * s;
+  const dividerX = wallX + (6 + 70) * s;
+  const dividerW = 6 * s;
+  const heaterBlockX = wallX + (6 + 43) * s;
+  const heaterBlockY = wallY + (96 - 6 - 34) * s;
   const cols = [6, 40.5, 75, 109.5, 144].map((v) => x + v * s);
   const rows = [6, 49, 92].map((v) => y + v * s);
   const piers = cols.flatMap((cx) => rows.map((cy) => [cx, cy]));
@@ -237,11 +245,15 @@ function foundationSheet() {
     "Foundation And Pier Grid",
     "Recommended strong scheme: 15 piers · 5 front-to-back beam lines · outer piers extend onto soil",
     `
-      ${rect(90, y, 210, d, "", `fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"`)}
-      ${rect(x + w, y, 210, d, "", `fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"`)}
+      ${rect(x + padW, y, w - padW, d, "", `fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"`)}
       ${rect(padX, padY, padW, padD, "", `fill="${dg}" stroke="#8c7b59" stroke-width="2" stroke-dasharray="9 7"`)}
       ${text(padX + padW / 2, padY + 66, "existing DG pad", "small", "middle")}
+      ${text(x + padW + (w - padW) / 2, padY + 66, "sidecar soil extension", "small", "middle")}
       ${rect(x, y, w, d, "", `fill="none" stroke="${ink}" stroke-width="3"`)}
+      ${rect(wallX, wallY, wallW, wallD, "", `fill="none" stroke="${alert}" stroke-width="2" stroke-dasharray="12 8"`)}
+      ${rect(dividerX, wallY, dividerW, wallD, "", `fill="rgba(163,58,42,0.08)" stroke="${alert}" stroke-width="2" stroke-dasharray="7 5"`)}
+      ${rect(heaterBlockX, heaterBlockY, 34 * s, 28 * s, "", `fill="none" stroke="${alert}" stroke-width="2" stroke-dasharray="7 5"`)}
+      ${rect(wallX + 6 * s, wallY + 6 * s, 70 * s, 18 * s, "", `fill="none" stroke="${blue}" stroke-width="2" stroke-dasharray="8 6"`)}
       ${cols.map((cx) => `<line x1="${cx}" y1="${rows[0]}" x2="${cx}" y2="${rows[2]}" stroke="${ink}" stroke-width="3"/>`).join("")}
       ${rows.map((ry) => `<line x1="${cols[0]}" y1="${ry}" x2="${cols[4]}" y2="${ry}" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="9 6"/>`).join("")}
       ${piers.map(([cx, cy]) => `<circle cx="${cx}" cy="${cy}" r="${6 * s}" fill="#fffdf8" stroke="${ink}" stroke-width="3"/><circle cx="${cx}" cy="${cy}" r="${1.5 * s}" fill="${ink}"/>`).join("")}
@@ -264,6 +276,7 @@ function foundationSheet() {
       ${dimV(x + w + 50, rows[0], rows[1], "43")}
       ${dimV(x + w + 50, rows[1], rows[2], "43")}
       ${leader(cols[4], rows[1], x + w + 95, rows[1] - 60, "outer pier line in soil", "tiny")}
+      ${leader(heaterBlockX + 34 * s, heaterBlockY + 14 * s, x + w + 95, rows[1] + 22, "blocking zones dashed", "tiny")}
       ${text(x + w / 2, y + d + 118, "Use final pier depth, diameter, rebar, and inspection sequence from local code / site soil.", "note", "middle")}
       <g transform="translate(1235 220)">
         ${text(0, 0, "Grid rules", "label")}
@@ -271,7 +284,7 @@ function foundationSheet() {
         ${text(0, 70, "2. Pier centers inset 6 in from platform edge.", "note")}
         ${text(0, 102, "3. Beam lines run front-to-back over piers.", "note")}
         ${text(0, 134, "4. Joists run left-to-right across beams.", "note")}
-        ${text(0, 166, "5. Add doubled joist/blocking below divider wall.", "note")}
+        ${text(0, 166, "5. Red dashed lines show wall/divider/heater load zones.", "note")}
         ${text(0, 198, "6. Cut short posts to make beam plane level.", "note")}
       </g>`,
     "Foundation plan showing a 150 by 98 inch platform, the existing 120 by 96 inch DG pad, and fifteen concrete pier locations."
@@ -298,7 +311,7 @@ function sectionSheet() {
   return svg(
     "A201",
     "Hot Room Section",
-    "Section through hot room depth · bench heights, ceiling relationship, heater, and vent path",
+    "96 in ceiling case · bench heights, ceiling relationship, heater, and schematic air path",
     `
       ${rect(frontX, ceiling, 96 * s, 96 * s, "", `fill="#fffdf8" stroke="${ink}" stroke-width="4"`)}
       ${rect(clearFront, ceiling + wall, interiorD, 84 * s, "", `fill="${hot}" stroke="${ink}" stroke-width="1.5"`)}
@@ -314,7 +327,7 @@ function sectionSheet() {
       ${rect(clearFront - 2, floorY - 28 * s, 5, 18 * s, "", `fill="${blue}" stroke="${blue}" stroke-width="1"`)}
       ${rect(clearBack - 3, floorY - 20 * s, 6, 11 * s, "", `fill="${blue}" stroke="${blue}" stroke-width="1"`)}
       ${rect(clearBack - 3, ceiling + 14 * s, 6, 10 * s, "", `fill="${blue}" stroke="${blue}" stroke-width="1"`)}
-      ${text(clearFront - 22, floorY - 26 * s, "supply", "tiny", "end")}
+      ${text(clearFront - 22, floorY - 26 * s, "supply near heater", "tiny", "end")}
       ${text(clearBack - 10, floorY - 18 * s, "low exhaust", "tiny", "end")}
       ${text(clearBack - 10, ceiling + 19 * s, "drying vent", "tiny", "end")}
       ${dimV(frontX - 52, floorY, ceiling, "96 finished ceiling target")}
@@ -332,14 +345,14 @@ function sectionSheet() {
         ${text(0, 38, "1. Upper bench: 24 in comfortable sitting depth.", "note")}
         ${text(0, 70, "2. Foot platform supports main seats and return posture.", "note")}
         ${text(0, 102, "3. HIVE Mini 9; confirm current clearances at install.", "note")}
-        ${text(0, 134, "4. High vent closes during bathing; opens for drying.", "note")}
+        ${text(0, 134, "4. Vent side locations are controlled by E101.", "note")}
       </g>
       <g transform="translate(1055 530)">
         ${text(0, 0, "Performance targets", "label")}
         ${text(0, 38, "• Feet stay high, above the stone line.", "note")}
         ${text(0, 70, "• Room is for sitting, not lying down.", "note")}
         ${text(0, 102, "• Vents are framed before foil/cladding.", "note")}
-        ${text(0, 134, "• Finished ceiling/bench heights are held hard.", "note")}
+        ${text(0, 134, "• If ceiling is 94-95 in, lower benches to hold 44-46 in above upper bench.", "note")}
       </g>`,
     "Section drawing of the sauna hot room showing bench heights, ceiling height, heater position, and ventilation path."
   );

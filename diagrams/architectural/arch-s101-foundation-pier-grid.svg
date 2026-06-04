@@ -50,11 +50,15 @@
     <text x="1190" y="1030" class="sheetno">S101</text>
     <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
   
-      <rect x="90" y="220" width="210" height="588" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
-      <rect x="1200" y="220" width="210" height="588" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
-      <rect x="390" y="226" width="720" height="576" class="" fill="#efe5cf" stroke="#8c7b59" stroke-width="2" stroke-dasharray="9 7"/>
-      <text x="750" y="292" class="small" text-anchor="middle" >existing DG pad</text>
+      <rect x="1020" y="220" width="180" height="588" class="" fill="url(#soil-hatch)" stroke="#c8c1b2" stroke-width="1"/>
+      <rect x="300" y="226" width="720" height="576" class="" fill="#efe5cf" stroke="#8c7b59" stroke-width="2" stroke-dasharray="9 7"/>
+      <text x="660" y="292" class="small" text-anchor="middle" >existing DG pad</text>
+      <text x="1110" y="292" class="small" text-anchor="middle" >sidecar soil extension</text>
       <rect x="300" y="220" width="900" height="588" class="" fill="none" stroke="#121820" stroke-width="3"/>
+      <rect x="306" y="226" width="888" height="576" class="" fill="none" stroke="#a33a2a" stroke-width="2" stroke-dasharray="12 8"/>
+      <rect x="762" y="226" width="36" height="576" class="" fill="rgba(163,58,42,0.08)" stroke="#a33a2a" stroke-width="2" stroke-dasharray="7 5"/>
+      <rect x="600" y="562" width="204" height="168" class="" fill="none" stroke="#a33a2a" stroke-width="2" stroke-dasharray="7 5"/>
+      <rect x="342" y="262" width="420" height="108" class="" fill="none" stroke="#245f9f" stroke-width="2" stroke-dasharray="8 6"/>
       <line x1="336" y1="256" x2="336" y2="772" stroke="#121820" stroke-width="3"/><line x1="543" y1="256" x2="543" y2="772" stroke="#121820" stroke-width="3"/><line x1="750" y1="256" x2="750" y2="772" stroke="#121820" stroke-width="3"/><line x1="957" y1="256" x2="957" y2="772" stroke="#121820" stroke-width="3"/><line x1="1164" y1="256" x2="1164" y2="772" stroke="#121820" stroke-width="3"/>
       <line x1="336" y1="256" x2="1164" y2="256" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="9 6"/><line x1="336" y1="514" x2="1164" y2="514" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="9 6"/><line x1="336" y1="772" x2="1164" y2="772" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="9 6"/>
       <circle cx="336" cy="256" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="336" cy="256" r="9" fill="#121820"/><circle cx="336" cy="514" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="336" cy="514" r="9" fill="#121820"/><circle cx="336" cy="772" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="336" cy="772" r="9" fill="#121820"/><circle cx="543" cy="256" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="543" cy="256" r="9" fill="#121820"/><circle cx="543" cy="514" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="543" cy="514" r="9" fill="#121820"/><circle cx="543" cy="772" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="543" cy="772" r="9" fill="#121820"/><circle cx="750" cy="256" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="750" cy="256" r="9" fill="#121820"/><circle cx="750" cy="514" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="750" cy="514" r="9" fill="#121820"/><circle cx="750" cy="772" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="750" cy="772" r="9" fill="#121820"/><circle cx="957" cy="256" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="957" cy="256" r="9" fill="#121820"/><circle cx="957" cy="514" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="957" cy="514" r="9" fill="#121820"/><circle cx="957" cy="772" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="957" cy="772" r="9" fill="#121820"/><circle cx="1164" cy="256" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="1164" cy="256" r="9" fill="#121820"/><circle cx="1164" cy="514" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="1164" cy="514" r="9" fill="#121820"/><circle cx="1164" cy="772" r="36" fill="#fffdf8" stroke="#121820" stroke-width="3"/><circle cx="1164" cy="772" r="9" fill="#121820"/>
@@ -72,10 +76,10 @@
     <line x1="300" y1="160" x2="1200" y2="160" class="dim"/>
     <text x="750" y="152" class="dimtxt" text-anchor="middle" >150 foundation platform</text>
       
-    <line x1="390" y1="856" x2="390" y2="886" class="ext"/>
-    <line x1="1110" y1="856" x2="1110" y2="886" class="ext"/>
-    <line x1="390" y1="878" x2="1110" y2="878" class="dim"/>
-    <text x="750" y="870" class="dimtxt" text-anchor="middle" >120 existing DG pad</text>
+    <line x1="300" y1="856" x2="300" y2="886" class="ext"/>
+    <line x1="1020" y1="856" x2="1020" y2="886" class="ext"/>
+    <line x1="300" y1="878" x2="1020" y2="878" class="dim"/>
+    <text x="660" y="870" class="dimtxt" text-anchor="middle" >120 existing DG pad</text>
       
     <line x1="214" y1="220" x2="246" y2="220" class="ext"/>
     <line x1="214" y1="808" x2="246" y2="808" class="ext"/>
@@ -120,6 +124,10 @@
     <path d="M1164 514 L1295 454" class="thin"/>
     <circle cx="1164" cy="514" r="4" fill="#121820"/>
     <text x="1303" y="459" class="tiny" text-anchor="start" >outer pier line in soil</text>
+      
+    <path d="M804 646 L1295 536" class="thin"/>
+    <circle cx="804" cy="646" r="4" fill="#121820"/>
+    <text x="1303" y="541" class="tiny" text-anchor="start" >blocking zones dashed</text>
       <text x="750" y="926" class="note" text-anchor="middle" >Use final pier depth, diameter, rebar, and inspection sequence from local code / site soil.</text>
       <g transform="translate(1235 220)">
         <text x="0" y="0" class="label" text-anchor="start" >Grid rules</text>
@@ -127,7 +135,7 @@
         <text x="0" y="70" class="note" text-anchor="start" >2. Pier centers inset 6 in from platform edge.</text>
         <text x="0" y="102" class="note" text-anchor="start" >3. Beam lines run front-to-back over piers.</text>
         <text x="0" y="134" class="note" text-anchor="start" >4. Joists run left-to-right across beams.</text>
-        <text x="0" y="166" class="note" text-anchor="start" >5. Add doubled joist/blocking below divider wall.</text>
+        <text x="0" y="166" class="note" text-anchor="start" >5. Red dashed lines show wall/divider/heater load zones.</text>
         <text x="0" y="198" class="note" text-anchor="start" >6. Cut short posts to make beam plane level.</text>
       </g>
 </svg>

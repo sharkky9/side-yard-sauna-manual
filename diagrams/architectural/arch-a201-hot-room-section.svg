@@ -46,7 +46,7 @@
     <line x1="40" y1="980" x2="1560" y2="980" class="title-line"/>
     <line x1="1160" y1="980" x2="1160" y2="1060" class="title-line"/>
     <text x="64" y="1024" class="title">Hot Room Section</text>
-    <text x="64" y="1052" class="note">Section through hot room depth · bench heights, ceiling relationship, heater, and vent path</text>
+    <text x="64" y="1052" class="note">96 in ceiling case · bench heights, ceiling relationship, heater, and schematic air path</text>
     <text x="1190" y="1030" class="sheetno">A201</text>
     <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
   
@@ -64,7 +64,7 @@
       <rect x="284" y="612" width="5" height="108" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
       <rect x="787" y="660" width="6" height="66" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
       <rect x="787" y="288" width="6" height="60" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
-      <text x="264" y="624" class="tiny" text-anchor="end" >supply</text>
+      <text x="264" y="624" class="tiny" text-anchor="end" >supply near heater</text>
       <text x="780" y="672" class="tiny" text-anchor="end" >low exhaust</text>
       <text x="780" y="318" class="tiny" text-anchor="end" >drying vent</text>
       
@@ -114,13 +114,13 @@
         <text x="0" y="38" class="note" text-anchor="start" >1. Upper bench: 24 in comfortable sitting depth.</text>
         <text x="0" y="70" class="note" text-anchor="start" >2. Foot platform supports main seats and return posture.</text>
         <text x="0" y="102" class="note" text-anchor="start" >3. HIVE Mini 9; confirm current clearances at install.</text>
-        <text x="0" y="134" class="note" text-anchor="start" >4. High vent closes during bathing; opens for drying.</text>
+        <text x="0" y="134" class="note" text-anchor="start" >4. Vent side locations are controlled by E101.</text>
       </g>
       <g transform="translate(1055 530)">
         <text x="0" y="0" class="label" text-anchor="start" >Performance targets</text>
         <text x="0" y="38" class="note" text-anchor="start" >• Feet stay high, above the stone line.</text>
         <text x="0" y="70" class="note" text-anchor="start" >• Room is for sitting, not lying down.</text>
         <text x="0" y="102" class="note" text-anchor="start" >• Vents are framed before foil/cladding.</text>
-        <text x="0" y="134" class="note" text-anchor="start" >• Finished ceiling/bench heights are held hard.</text>
+        <text x="0" y="134" class="note" text-anchor="start" >• If ceiling is 94-95 in, lower benches to hold 44-46 in above upper bench.</text>
       </g>
 </svg>
