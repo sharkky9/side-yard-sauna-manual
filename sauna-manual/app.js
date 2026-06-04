@@ -365,9 +365,9 @@ const bomItems = [
 
 const assemblySheets = [
   {
-    title: "Sheet A / A101: Site fit and utility clearance",
+    title: "Sheet A / C101: Site fit and utility clearance",
     version: "all",
-    diagram: "../diagrams/architectural/arch-a101-revised-floor-plan.svg",
+    diagram: "../diagrams/architectural/arch-c101-site-footprint.svg",
     parts: ["stakes", "string", "spray paint", "panel-clearance tape", "landing mockup"],
     method: [
       "Mark the real 10 ft x 8 ft DG pad, not the assumed pad.",
@@ -378,16 +378,16 @@ const assemblySheets = [
     hold: "Do not dig until panel clearance, utility locate, door swing, roof discharge, and sidecar fit are physically marked."
   },
   {
-    title: "Sheet B / S101: Pier grid and platform",
+    title: "Sheet B / S101-S102: Pier grid and platform framing",
     version: "all",
     diagram: "../diagrams/architectural/arch-s101-foundation-pier-grid.svg",
     parts: ["12 in sonotubes", "6x6 PT posts", "4x6 PT beams", "2x8 PT joists", "rodent mesh"],
     method: [
       "Sauna-only platform: about 84 x 98 in with 9 piers, 3 x 3.",
       "Sidecar platform: about 150 x 98 in with 15 piers, 5 beam lines x 3 rows.",
-      "Use front-to-back 4x6 beams over pier rows; run 2x8 joists left-right across the platform.",
+      "Use S102 for the platform framing: front-to-back 4x6 beams over pier rows; 2x8 joists left-right across the platform.",
       "Layout seven field joists plus front/back rim joists for 12 in layout lines over the 98 in sidecar platform depth.",
-      "Use the S101 dashed overlays to locate wall, divider, heater, bench, and threshold blocking zones before subfloor."
+      "Use the S102 dashed overlays to locate wall, divider, heater, bench, and threshold blocking zones before subfloor."
     ],
     hold: "Do not install subfloor until diagonals match within 1/8-1/4 in, joist crowns are consistent, and the heater corner is blocked."
   },
@@ -406,7 +406,7 @@ const assemblySheets = [
     hold: "Do not clad walls until the wall-base detail is visible, waterproofed, and inspectable."
   },
   {
-    title: "Sheet D / A301: Weather shell, door, and roof water",
+    title: "Sheet D / A102-A302: Weather shell, door, and roof water",
     version: "all",
     diagram: "../diagrams/architectural/arch-a301-front-elevation.svg",
     parts: ["WRB", "flashing tape", "sill pan", "drip cap", "rainscreen furring", "roof drip edge"],
@@ -415,6 +415,7 @@ const assemblySheets = [
       "Use a sill pan with back dam or slope, side flashing over pan, and head flashing/drip cap.",
       "Use a mandatory rainscreen: sheathing, WRB, vertical furring, insect screen, siding.",
       "Use one single-slope roof plane with controlled discharge away from fence, panel, and pier bases.",
+      "Use A102 for the roof/ceiling close-in and A302 for quiet side/rear elevation decisions.",
       "Keep siding and trim at least 6 in above DG where possible; use sacrificial lower trim if clearance is tight."
     ],
     hold: "Do not install siding until door pan/head flashing, WRB laps, rainscreen exits, and roof drip path are complete."
@@ -434,7 +435,7 @@ const assemblySheets = [
     hold: "Do not insulate until rough electrical, sensor paths, vent sleeves, and inspection requirements are complete."
   },
   {
-    title: "Sheet F / A201: Bench support and heater guard",
+    title: "Sheet F / A201-A403: Bench support and heater guard",
     version: "all",
     diagram: "../diagrams/architectural/arch-a201-hot-room-section.svg",
     parts: ["bench ledgers", "blocking", "upper bench slats", "foot platform", "lower step", "heater guard"],
@@ -442,6 +443,7 @@ const assemblySheets = [
       "Mock up the upper bench, return, foot platform, lower step, heater, and door trim before cutting premium stock.",
       "Treat A201 as the 96 in finished-ceiling case. If the finished ceiling lands at 94-95 in, lower the upper bench enough to preserve the 44-46 in top-bench-to-ceiling target.",
       "Support benches from structural blocking/ledgers, not from cladding.",
+      "Use A403 for the bench ledger/blocking detail before closing the walls.",
       "Seal any foil penetrations created for bench ledgers or guard fasteners.",
       "Round over every body-contact edge and keep slat gaps cleanable.",
       "Build heater guard only after the heater and door trim are real."
@@ -449,9 +451,9 @@ const assemblySheets = [
     hold: "Do not final-fasten benches until two-person, three-person, and entry/exit posture are tested cold."
   },
   {
-    title: "Sheet G / A101: Sidecar addendum",
+    title: "Sheet G / A202: Sidecar addendum",
     version: "sidecar",
-    diagram: "../diagrams/architectural/arch-a101-revised-floor-plan.svg",
+    diagram: "../diagrams/architectural/arch-a202-cross-section.svg",
     parts: ["divider wall", "narrow exterior door", "shelf blocking", "high/low vents", "threshold flashing"],
     method: [
       "Treat the sidecar as an integrated bay under the same roof, not a closet bolted on.",

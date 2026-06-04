@@ -468,17 +468,17 @@ main {
 
 .drawing-package {
   display: grid;
-  grid-template-columns: minmax(260px, 0.34fr) minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
+  gap: 26px;
   align-items: start;
 }
 
 .sheet-list,
 .drawing-card {
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 6px;
   background: #fff;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 26px rgba(20, 24, 32, 0.08);
 }
 
 .sheet-list {
@@ -509,7 +509,7 @@ main {
 .drawing-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 30px;
 }
 
 .drawing-card {
@@ -525,10 +525,24 @@ main {
 }
 
 .drawing-card figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 18px;
   padding: 12px 14px;
   color: var(--muted);
   font-size: 14px;
   border-top: 1px solid var(--line);
+}
+
+.drawing-card figcaption strong {
+  color: var(--ink);
+}
+
+.drawing-card figcaption a {
+  white-space: nowrap;
+  font-weight: 800;
 }
 
 .loyly-frame img {

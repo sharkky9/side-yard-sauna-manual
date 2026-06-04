@@ -1,105 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
-  <title id="title">Floor Pan, Wall Base, And Rainscreen Detail</title>
-  <desc id="desc">Architectural wall-base detail showing the sauna floor waterproofing, wall framing, insulation, foil vapor barrier, furring, cladding gap, and base flashing.</desc>
+  <title id="title">A401 Wall Base And Pier Detail</title>
+  <desc id="desc">Construction detail sheet showing hot-room wall base waterproofing and a separate pier-to-beam platform section.</desc>
   
     <defs>
       <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-        <path d="M0,0 L10,5 L0,10 Z" fill="#121820" />
+        <path d="M0 0 L10 5 L0 10 Z" fill="#111827"/>
       </marker>
       <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-        <path d="M0,0 L10,5 L0,10 Z" fill="#245f9f" />
+        <path d="M0 0 L10 5 L0 10 Z" fill="#245f9f"/>
       </marker>
-      <pattern id="soil-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-        <line x1="0" y1="0" x2="0" y2="18" stroke="#c8c1b2" stroke-width="1"/>
+      <pattern id="soil-hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="16" stroke="#c9c1b4" stroke-width="1"/>
       </pattern>
-      <pattern id="deck-hatch" width="16" height="16" patternUnits="userSpaceOnUse">
-        <path d="M0 16 L16 0" stroke="#d1c39f" stroke-width="1"/>
+      <pattern id="dg-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="18" stroke="#b9a47d" stroke-width="1.2"/>
       </pattern>
-      <pattern id="wood-grain" width="28" height="8" patternUnits="userSpaceOnUse">
-        <line x1="0" y1="4" x2="28" y2="4" stroke="#b78953" stroke-width="1"/>
+      <pattern id="wood-hatch" width="34" height="10" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="5" x2="34" y2="5" stroke="#9a6b31" stroke-width="1"/>
+      </pattern>
+      <pattern id="siding" width="38" height="38" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="0" y2="38" stroke="#c8ced6" stroke-width="1"/>
       </pattern>
       <style>
-        .sheet-bg{fill:#fffdf8}
-        .border{fill:none;stroke:#121820;stroke-width:2}
-        .title-line{stroke:#121820;stroke-width:1.2}
-        .wall{fill:#d8dce2;stroke:#121820;stroke-width:4}
-        .cut{fill:#fffdf8;stroke:#121820;stroke-width:3}
-        .thin{fill:none;stroke:#121820;stroke-width:1.4}
-        .med{fill:none;stroke:#121820;stroke-width:2.2}
-        .heavy{fill:none;stroke:#121820;stroke-width:4}
-        .dim{fill:none;stroke:#121820;stroke-width:1.2;marker-start:url(#arrow);marker-end:url(#arrow)}
-        .ext{stroke:#5c6673;stroke-width:1;stroke-dasharray:5 5}
-        .label{font:500 22px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .small{font:500 16px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .tiny{font:500 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .dimtxt{font:700 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .note{font:500 15px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#5c6673}
-        .title{font:800 28px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .sheetno{font:900 38px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .badge{font:800 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#fff}
+        .bg{fill:#fffdf8}
+        .sheet-border{fill:none;stroke:#111827;stroke-width:2}
+        .title-rule{stroke:#111827;stroke-width:1.2}
+        .cut{fill:#d9dde3;stroke:#111827;stroke-width:5;stroke-linejoin:round}
+        .object{fill:#fffdf8;stroke:#111827;stroke-width:2.4;stroke-linejoin:round}
+        .object-light{fill:#fffdf8;stroke:#111827;stroke-width:1.4;stroke-linejoin:round}
+        .hidden{fill:none;stroke:#5b6470;stroke-width:1.4;stroke-dasharray:8 6}
+        .planning{fill:none;stroke:#a23d30;stroke-width:2.2;stroke-dasharray:10 7}
+        .blue-line{fill:none;stroke:#245f9f;stroke-width:2.4}
+        .blue-dash{fill:none;stroke:#245f9f;stroke-width:2;stroke-dasharray:9 6}
+        .dim{fill:none;stroke:#111827;stroke-width:1.2}
+        .ext{stroke:#5b6470;stroke-width:1;stroke-dasharray:5 5}
+        .thin{fill:none;stroke:#111827;stroke-width:1.2}
+        .med{fill:none;stroke:#111827;stroke-width:2.2}
+        .heavy{fill:none;stroke:#111827;stroke-width:4}
+        .title{font:800 28px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .subtitle{font:500 15px Inter,ui-sans-serif,system-ui,sans-serif;fill:#5b6470}
+        .sheet-no{font:900 42px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .label{font:750 22px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .small{font:600 16px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .tiny{font:600 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .note{font:500 15px Inter,ui-sans-serif,system-ui,sans-serif;fill:#5b6470}
+        .dimtxt{font:800 17px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .key{font:800 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#fff}
       </style>
     </defs>
-  <rect width="1600" height="1100" class="sheet-bg"/>
+  <rect width="1600" height="1100" class="bg"/>
+  <rect x="42" y="42" width="1516" height="1016" class="sheet-border"/>
+  <line x1="42" y1="980" x2="1558" y2="980" class="title-rule"/>
+  <line x1="1138" y1="980" x2="1138" y2="1058" class="title-rule"/>
+  <text x="66" y="1018" class="title">Wall Base And Pier Detail</text>
+  <text x="66" y="1046" class="subtitle">Two details that decide water durability: hot-room base and pier-to-beam standoff</text>
+  <text x="1170" y="1026" class="sheet-no">A401</text>
+  <text x="1170" y="1050" class="tiny">Side-yard sauna planning set | not stamped</text>
   
-    <rect x="40" y="40" width="1520" height="1020" class="border"/>
-    <line x1="40" y1="980" x2="1560" y2="980" class="title-line"/>
-    <line x1="1160" y1="980" x2="1160" y2="1060" class="title-line"/>
-    <text x="64" y="1024" class="title">Floor Pan, Wall Base, And Rainscreen Detail</text>
-    <text x="64" y="1052" class="note">The inch that keeps water out of hidden framing</text>
-    <text x="1190" y="1030" class="sheetno">A401</text>
-    <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
-  
-      <rect x="520" y="290" width="90" height="620" class="" fill="#d8dce2" stroke="#121820" stroke-width="3"/>
-      <rect x="610" y="290" width="26" height="620" class="" fill="#fff3c4" stroke="#121820" stroke-width="1.4"/>
-      <rect x="636" y="290" width="12" height="620" class="" fill="#cfd7df" stroke="#121820" stroke-width="1.1"/>
-      <rect x="660" y="290" width="34" height="620" class="" fill="#f4e4c9" stroke="#121820" stroke-width="1.4"/>
-      <rect x="694" y="290" width="28" height="620" class="" fill="url(#wood-grain)" stroke="#121820" stroke-width="1.2"/>
-      <rect x="408" y="820" width="510" height="32" class="" fill="#d2d6dc" stroke="#121820" stroke-width="2"/>
-      <rect x="408" y="782" width="510" height="38" class="" fill="#e7e0d4" stroke="#121820" stroke-width="1.5"/>
-      <rect x="408" y="766" width="510" height="16" class="" fill="#39505f" stroke="#121820" stroke-width="1.5"/>
-      <path d="M410 766 L722 766 L722 558 L674 558 L674 740 L410 740 Z" fill="#88a9bf" opacity="0.26" stroke="#245f9f" stroke-width="2"/>
-      <rect x="694" y="718" width="28" height="64" class="" fill="#fffdf8" stroke="#fffdf8" stroke-width="0"/>
-      <line x1="694" y1="718" x2="722" y2="718" class="thin"/>
-      <text x="712" y="708" class="tiny" text-anchor="middle" >1/2-1 in open gap</text>
-      <rect x="660" y="728" width="62" height="30" class="" fill="#1f2933" stroke="#121820" stroke-width="1.2"/>
+      <text x="170" y="132" class="label" text-anchor="start" >Detail 1 - hot-room wall base</text>
+      <rect x="380" y="190" width="88" height="620" class="" fill="#d9dde3" stroke="#111827" stroke-width="3"/>
+      <rect x="468" y="190" width="28" height="620" class="" fill="#f5df9f" stroke="#111827" stroke-width="1.4"/>
+      <rect x="496" y="190" width="12" height="620" class="" fill="#cbd4dc" stroke="#111827" stroke-width="1.2"/>
+      <rect x="526" y="190" width="32" height="620" class="" fill="#ecd7b9" stroke="#111827" stroke-width="1.4"/>
+      <rect x="558" y="190" width="28" height="620" class="" fill="url(#wood-hatch)" stroke="#111827" stroke-width="1.3"/>
+      <rect x="240" y="690" width="520" height="36" class="" fill="#d4d8de" stroke="#111827" stroke-width="2"/>
+      <rect x="240" y="652" width="520" height="38" class="" fill="#e6ded1" stroke="#111827" stroke-width="1.5"/>
+      <rect x="240" y="636" width="520" height="16" class="" fill="#34495a" stroke="#111827" stroke-width="1.5"/>
+      <path d="M242 636 L586 636 L586 436 L538 436 L538 612 L242 612 Z" fill="#8bb2c8" opacity="0.28" stroke="#245f9f" stroke-width="2"/>
+      <rect x="558" y="588" width="28" height="64" class="" fill="#fffdf8" stroke="#fffdf8"/>
+      <line x1="558" y1="588" x2="586" y2="588" class="thin"/>
+      <rect x="524" y="600" width="64" height="28" class="" fill="#1f2937" stroke="#111827" stroke-width="1.2"/>
       
-    <path d="M705 740 L990 260" class="thin"/>
-    <circle cx="705" cy="740" r="4" fill="#121820"/>
-    <text x="998" y="265" class="tiny" text-anchor="start" >black/stainless base flashing behind shadow gap</text>
+    <circle cx="575" cy="600" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="575" y="605" class="key" text-anchor="middle" >1</text>
       
-    <path d="M550 390 L990 310" class="thin"/>
-    <circle cx="550" cy="390" r="4" fill="#121820"/>
-    <text x="998" y="315" class="tiny" text-anchor="start" >2x4 wall framing</text>
+    <circle cx="515" cy="262" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="515" y="267" class="key" text-anchor="middle" >2</text>
       
-    <path d="M624 390 L990 360" class="thin"/>
-    <circle cx="624" cy="390" r="4" fill="#121820"/>
-    <text x="998" y="365" class="tiny" text-anchor="start" >mineral wool insulation</text>
+    <circle cx="384" cy="690" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="384" y="695" class="key" text-anchor="middle" >3</text>
       
-    <path d="M642 390 L990 410" class="thin"/>
-    <circle cx="642" cy="390" r="4" fill="#121820"/>
-    <text x="998" y="415" class="tiny" text-anchor="start" >continuous foil vapor barrier, taped</text>
+    <circle cx="272" cy="642" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="272" y="647" class="key" text-anchor="middle" >4</text>
+      <text x="626" y="266" class="note" text-anchor="start" >1  Cladding stops above floor.</text><text x="626" y="301" class="note" text-anchor="start" >   Leave open shadow gap.</text><text x="626" y="336" class="note" text-anchor="start" >2  Foil is continuous and taped.</text><text x="626" y="371" class="note" text-anchor="start" >3  Waterproofing turns up 4-6 in.</text><text x="626" y="406" class="note" text-anchor="start" >4  Sloped finish under duckboards.</text>
+      <text x="780" y="132" class="label" text-anchor="start" >Detail 2 - pier, post, beam, and joist</text>
+      <rect x="970" y="600" width="110" height="210" class="" fill="#cfd5dd" stroke="#111827" stroke-width="3"/>
+      <rect x="958" y="560" width="134" height="40" class="" fill="#e7eaee" stroke="#111827" stroke-width="2"/>
+      <rect x="990" y="448" width="70" height="112" class="" fill="#d4b07a" stroke="#111827" stroke-width="2.4"/>
+      <rect x="920" y="396" width="210" height="52" class="" fill="#c99d5d" stroke="#111827" stroke-width="2.4"/>
+      <rect x="868" y="338" width="316" height="42" class="" fill="#e5c99f" stroke="#111827" stroke-width="2"/>
+      <line x1="878" y1="338" x2="878" y2="380" class="thin"/><line x1="932" y1="338" x2="932" y2="380" class="thin"/><line x1="986" y1="338" x2="986" y2="380" class="thin"/><line x1="1040" y1="338" x2="1040" y2="380" class="thin"/><line x1="1094" y1="338" x2="1094" y2="380" class="thin"/><line x1="1148" y1="338" x2="1148" y2="380" class="thin"/>
+      <rect x="868" y="296" width="316" height="42" class="" fill="#dfe5eb" stroke="#111827" stroke-width="1.6"/>
+      <rect x="966" y="568" width="118" height="20" class="" fill="#adb5bd" stroke="#111827" stroke-width="1.4"/>
       
-    <path d="M678 390 L990 460" class="thin"/>
-    <circle cx="678" cy="390" r="4" fill="#121820"/>
-    <text x="998" y="465" class="tiny" text-anchor="start" >1x2 furring creates air gap</text>
+    <circle cx="1094" cy="306" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="1094" y="311" class="key" text-anchor="middle" >5</text>
       
-    <path d="M710 390 L990 510" class="thin"/>
-    <circle cx="710" cy="390" r="4" fill="#121820"/>
-    <text x="998" y="515" class="tiny" text-anchor="start" >sauna cladding stops above floor</text>
+    <circle cx="1160" cy="358" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="1160" y="363" class="key" text-anchor="middle" >6</text>
       
-    <path d="M550 768 L990 610" class="thin"/>
-    <circle cx="550" cy="768" r="4" fill="#121820"/>
-    <text x="998" y="615" class="tiny" text-anchor="start" >waterproof floor turns up 4-6 in behind wall base</text>
+    <circle cx="1140" cy="422" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="1140" y="427" class="key" text-anchor="middle" >7</text>
       
-    <path d="M500 806 L990 660" class="thin"/>
-    <circle cx="500" cy="806" r="4" fill="#121820"/>
-    <text x="998" y="665" class="tiny" text-anchor="start" >sloped tile / cleanable finish under removable duckboards</text>
-      <text x="554" y="264" class="label" text-anchor="middle" >Sauna interior side</text>
-      <text x="770" y="264" class="label" text-anchor="middle" >Wall layers</text>
-      <g transform="translate(990 720)">
-        <text x="0" y="0" class="label" text-anchor="start" >Hold point</text>
-        <text x="0" y="38" class="note" text-anchor="start" >Do not install cladding until this base detail is visible,</text>
-        <text x="0" y="66" class="note" text-anchor="start" >waterproofed, photographed, and inspectable.</text>
-      </g>
+    <circle cx="1080" cy="580" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="1080" y="585" class="key" text-anchor="middle" >8</text>
+      <text x="1250" y="306" class="note" text-anchor="start" >5  Subfloor over mesh and insulation.</text><text x="1250" y="341" class="note" text-anchor="start" >6  2x8 joists run left-right.</text><text x="1250" y="376" class="note" text-anchor="start" >7  4x6 beam over short 6x6 post.</text><text x="1250" y="411" class="note" text-anchor="start" >8  Standoff keeps post above concrete.</text>
+      <g transform="translate(1030 708)"><rect x="0" y="0" width="380" height="142" class="object-light" fill="#fffdf8"/><text x="14" y="27" class="small" text-anchor="start" >Field hold points</text><line x1="0" y1="40" x2="380" y2="40" class="thin"/><line x1="0" y1="74" x2="380" y2="74" class="thin"/><text x="14" y="63" class="tiny" text-anchor="start" >Before cover</text><text x="164" y="63" class="tiny" text-anchor="start" >photo hidden layers</text><line x1="0" y1="108" x2="380" y2="108" class="thin"/><text x="14" y="97" class="tiny" text-anchor="start" >Before cladding</text><text x="164" y="97" class="tiny" text-anchor="start" >confirm base gap and foil laps</text><line x1="0" y1="142" x2="380" y2="142" class="thin"/><text x="14" y="131" class="tiny" text-anchor="start" >Before benches</text><text x="164" y="131" class="tiny" text-anchor="start" >cold mockup body positions</text><line x1="150" y1="40" x2="150" y2="142" class="thin"/></g>
 </svg>

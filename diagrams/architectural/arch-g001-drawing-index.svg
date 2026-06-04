@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">G001 Drawing Index And Conventions</title>
+  <desc id="desc">Cover sheet with drawing index, footprint thumbnail, line type rules, symbols, and planning-set disclaimer.</desc>
+  
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="#111827"/>
+      </marker>
+      <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="#245f9f"/>
+      </marker>
+      <pattern id="soil-hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="16" stroke="#c9c1b4" stroke-width="1"/>
+      </pattern>
+      <pattern id="dg-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="18" stroke="#b9a47d" stroke-width="1.2"/>
+      </pattern>
+      <pattern id="wood-hatch" width="34" height="10" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="5" x2="34" y2="5" stroke="#9a6b31" stroke-width="1"/>
+      </pattern>
+      <pattern id="siding" width="38" height="38" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="0" y2="38" stroke="#c8ced6" stroke-width="1"/>
+      </pattern>
+      <style>
+        .bg{fill:#fffdf8}
+        .sheet-border{fill:none;stroke:#111827;stroke-width:2}
+        .title-rule{stroke:#111827;stroke-width:1.2}
+        .cut{fill:#d9dde3;stroke:#111827;stroke-width:5;stroke-linejoin:round}
+        .object{fill:#fffdf8;stroke:#111827;stroke-width:2.4;stroke-linejoin:round}
+        .object-light{fill:#fffdf8;stroke:#111827;stroke-width:1.4;stroke-linejoin:round}
+        .hidden{fill:none;stroke:#5b6470;stroke-width:1.4;stroke-dasharray:8 6}
+        .planning{fill:none;stroke:#a23d30;stroke-width:2.2;stroke-dasharray:10 7}
+        .blue-line{fill:none;stroke:#245f9f;stroke-width:2.4}
+        .blue-dash{fill:none;stroke:#245f9f;stroke-width:2;stroke-dasharray:9 6}
+        .dim{fill:none;stroke:#111827;stroke-width:1.2}
+        .ext{stroke:#5b6470;stroke-width:1;stroke-dasharray:5 5}
+        .thin{fill:none;stroke:#111827;stroke-width:1.2}
+        .med{fill:none;stroke:#111827;stroke-width:2.2}
+        .heavy{fill:none;stroke:#111827;stroke-width:4}
+        .title{font:800 28px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .subtitle{font:500 15px Inter,ui-sans-serif,system-ui,sans-serif;fill:#5b6470}
+        .sheet-no{font:900 42px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .label{font:750 22px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .small{font:600 16px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .tiny{font:600 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .note{font:500 15px Inter,ui-sans-serif,system-ui,sans-serif;fill:#5b6470}
+        .dimtxt{font:800 17px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .key{font:800 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#fff}
+      </style>
+    </defs>
+  <rect width="1600" height="1100" class="bg"/>
+  <rect x="42" y="42" width="1516" height="1016" class="sheet-border"/>
+  <line x1="42" y1="980" x2="1558" y2="980" class="title-rule"/>
+  <line x1="1138" y1="980" x2="1138" y2="1058" class="title-rule"/>
+  <text x="66" y="1018" class="title">Drawing Index And Conventions</text>
+  <text x="66" y="1046" class="subtitle">Planning set for a side-yard sauna with integrated storage sidecar</text>
+  <text x="1170" y="1026" class="sheet-no">G001</text>
+  <text x="1170" y="1050" class="tiny">Side-yard sauna planning set | not stamped</text>
+  
+      <text x="160" y="158" class="title" text-anchor="start" >Side-yard sauna planning set</text>
+      <text x="160" y="196" class="note" text-anchor="start" >This package is a design and construction-planning aid.</text><text x="160" y="222" class="note" text-anchor="start" >It is not a permit set.</text><text x="160" y="248" class="note" text-anchor="start" >Use local code review, structural review, and electrical design before building.</text>
+      <rect x="160" y="296" width="520" height="336" class="object-light" fill="#fffdf8"/>
+      <rect x="206" y="340" width="420" height="272" class="object-light" fill="url(#dg-hatch)" stroke="#8c7b59" stroke-width="1.5" stroke-dasharray="9 6"/>
+      <rect x="206" y="336" width="525" height="278" class="object-light" fill="none" stroke="#111827" stroke-width="2"/>
+      <rect x="226" y="356" width="245" height="238" class="object-light" fill="#fff8e8" stroke="#111827" stroke-width="1.4"/>
+      <rect x="498" y="356" width="206" height="238" class="object-light" fill="#eef5ee" stroke="#111827" stroke-width="1.4"/>
+      <line x1="471" y1="336" x2="471" y2="614" class="med"/>
+      <line x1="498" y1="336" x2="498" y2="614" class="med"/>
+      <text x="348" y="490" class="small" text-anchor="middle" >HOT ROOM</text>
+      <text x="601" y="490" class="small" text-anchor="middle" >STORAGE</text>
+      
+    <line x1="206" y1="284" x2="206" y2="326" class="ext"/>
+    <line x1="731" y1="284" x2="731" y2="326" class="ext"/>
+    <line x1="206" y1="308" x2="731" y2="308" class="dim"/>
+    <line x1="198" y1="316" x2="214" y2="300" class="dim"/>
+    <line x1="723" y1="316" x2="739" y2="300" class="dim"/>
+    <text x="468.5" y="299" class="dimtxt" text-anchor="middle" >148&quot;</text>
+      
+    <line x1="158" y1="336" x2="198" y2="336" class="ext"/>
+    <line x1="158" y1="614" x2="198" y2="614" class="ext"/>
+    <line x1="178" y1="336" x2="178" y2="614" class="dim"/>
+    <line x1="170" y1="328" x2="186" y2="344" class="dim"/>
+    <line x1="170" y1="606" x2="186" y2="622" class="dim"/>
+    <text x="168" y="475" class="dimtxt" text-anchor="middle" transform="rotate(-90 168 475)">96&quot;</text>
+      <text x="468" y="668" class="tiny" text-anchor="middle" >Footprint thumbnail</text>
+      <g transform="translate(780 202)"><rect x="0" y="0" width="480" height="516" class="object-light" fill="#fffdf8"/><text x="14" y="27" class="small" text-anchor="start" >Sheet index</text><line x1="0" y1="40" x2="480" y2="40" class="thin"/><line x1="0" y1="74" x2="480" y2="74" class="thin"/><text x="14" y="63" class="tiny" text-anchor="start" >G001</text><text x="104" y="63" class="tiny" text-anchor="start" >Drawing index and conventions</text><line x1="0" y1="108" x2="480" y2="108" class="thin"/><text x="14" y="97" class="tiny" text-anchor="start" >C101</text><text x="104" y="97" class="tiny" text-anchor="start" >Site footprint and pad relationship</text><line x1="0" y1="142" x2="480" y2="142" class="thin"/><text x="14" y="131" class="tiny" text-anchor="start" >S101</text><text x="104" y="131" class="tiny" text-anchor="start" >Pier grid plan</text><line x1="0" y1="176" x2="480" y2="176" class="thin"/><text x="14" y="165" class="tiny" text-anchor="start" >S102</text><text x="104" y="165" class="tiny" text-anchor="start" >Platform framing plan</text><line x1="0" y1="210" x2="480" y2="210" class="thin"/><text x="14" y="199" class="tiny" text-anchor="start" >A101</text><text x="104" y="199" class="tiny" text-anchor="start" >Floor plan</text><line x1="0" y1="244" x2="480" y2="244" class="thin"/><text x="14" y="233" class="tiny" text-anchor="start" >A102</text><text x="104" y="233" class="tiny" text-anchor="start" >Roof and reflected ceiling plan</text><line x1="0" y1="278" x2="480" y2="278" class="thin"/><text x="14" y="267" class="tiny" text-anchor="start" >A201</text><text x="104" y="267" class="tiny" text-anchor="start" >Hot-room section</text><line x1="0" y1="312" x2="480" y2="312" class="thin"/><text x="14" y="301" class="tiny" text-anchor="start" >A202</text><text x="104" y="301" class="tiny" text-anchor="start" >Cross-section through sauna and sidecar</text><line x1="0" y1="346" x2="480" y2="346" class="thin"/><text x="14" y="335" class="tiny" text-anchor="start" >A301</text><text x="104" y="335" class="tiny" text-anchor="start" >Front elevation</text><line x1="0" y1="380" x2="480" y2="380" class="thin"/><text x="14" y="369" class="tiny" text-anchor="start" >A302</text><text x="104" y="369" class="tiny" text-anchor="start" >Side and rear elevations</text><line x1="0" y1="414" x2="480" y2="414" class="thin"/><text x="14" y="403" class="tiny" text-anchor="start" >A401</text><text x="104" y="403" class="tiny" text-anchor="start" >Wall base and pier detail</text><line x1="0" y1="448" x2="480" y2="448" class="thin"/><text x="14" y="437" class="tiny" text-anchor="start" >A402</text><text x="104" y="437" class="tiny" text-anchor="start" >Door threshold and flashing detail</text><line x1="0" y1="482" x2="480" y2="482" class="thin"/><text x="14" y="471" class="tiny" text-anchor="start" >A403</text><text x="104" y="471" class="tiny" text-anchor="start" >Roof eave and bench ledger detail</text><line x1="0" y1="516" x2="480" y2="516" class="thin"/><text x="14" y="505" class="tiny" text-anchor="start" >E101</text><text x="104" y="505" class="tiny" text-anchor="start" >Heater, vent, and control rough-in</text><line x1="90" y1="40" x2="90" y2="516" class="thin"/></g>
+      <g transform="translate(160 690)">
+        <text x="0" y="0" class="label" text-anchor="start" >Line and symbol rules</text>
+        <line x1="0" y1="42" x2="140" y2="42" class="heavy"/><text x="170" y="48" class="note" text-anchor="start" >cut walls / cut structure</text>
+        <line x1="0" y1="82" x2="140" y2="82" class="med"/><text x="170" y="88" class="note" text-anchor="start" >visible new work</text>
+        <line x1="0" y1="122" x2="140" y2="122" class="hidden"/><text x="170" y="128" class="note" text-anchor="start" >existing, overhead, or hidden work</text>
+        <line x1="0" y1="162" x2="140" y2="162" class="planning"/><text x="170" y="168" class="note" text-anchor="start" >field-verify / clearance envelope</text>
+        
+    <circle cx="620" cy="42" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="620" y="47" class="key" text-anchor="middle" >1</text><text x="690" y="48" class="note" text-anchor="start" >numbered keynote; read schedule on sheet</text>
+        
+    <circle cx="620" cy="92" r="24" fill="#fffdf8" stroke="#111827" stroke-width="2"/>
+    <line x1="602" y1="92" x2="638" y2="92" class="thin"/>
+    <text x="620" y="86" class="tiny" text-anchor="middle" >1</text>
+    <text x="620" y="109" class="tiny" text-anchor="middle" >A401</text><text x="690" y="98" class="note" text-anchor="start" >detail reference</text>
+        
+    <line x1="566" y1="158" x2="674" y2="158" class="med"/>
+    <line x1="620" y1="158" x2="620" y2="200" class="med"/>
+    <path d="M608 210 L632 210 L620 226 Z" fill="#111827"/>
+    <text x="596" y="150" class="tiny" text-anchor="end" >1</text>
+    <text x="644" y="150" class="tiny" text-anchor="start" >A201</text><text x="690" y="164" class="note" text-anchor="start" >section reference</text>
+        
+    <path d="M620 204 L641 240 L599 240 Z" fill="#fffdf8" stroke="#a23d30" stroke-width="2"/>
+    <text x="620" y="231" class="tiny" text-anchor="middle" fill="#a23d30">FV</text><text x="690" y="228" class="note" text-anchor="start" >field-verify before ordering or cutting</text>
+      </g>
+</svg>

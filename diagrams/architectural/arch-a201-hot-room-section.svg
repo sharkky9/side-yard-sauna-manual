@@ -1,126 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
-  <title id="title">Hot Room Section</title>
-  <desc id="desc">Section drawing of the sauna hot room showing bench heights, ceiling height, heater position, and ventilation path.</desc>
+  <title id="title">A201 Hot-Room Section</title>
+  <desc id="desc">Hot room section showing ceiling height, upper bench, foot platform, lower step, heater clearance zone, and schematic air path.</desc>
   
     <defs>
       <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-        <path d="M0,0 L10,5 L0,10 Z" fill="#121820" />
+        <path d="M0 0 L10 5 L0 10 Z" fill="#111827"/>
       </marker>
       <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-        <path d="M0,0 L10,5 L0,10 Z" fill="#245f9f" />
+        <path d="M0 0 L10 5 L0 10 Z" fill="#245f9f"/>
       </marker>
-      <pattern id="soil-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-        <line x1="0" y1="0" x2="0" y2="18" stroke="#c8c1b2" stroke-width="1"/>
+      <pattern id="soil-hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="16" stroke="#c9c1b4" stroke-width="1"/>
       </pattern>
-      <pattern id="deck-hatch" width="16" height="16" patternUnits="userSpaceOnUse">
-        <path d="M0 16 L16 0" stroke="#d1c39f" stroke-width="1"/>
+      <pattern id="dg-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="18" stroke="#b9a47d" stroke-width="1.2"/>
       </pattern>
-      <pattern id="wood-grain" width="28" height="8" patternUnits="userSpaceOnUse">
-        <line x1="0" y1="4" x2="28" y2="4" stroke="#b78953" stroke-width="1"/>
+      <pattern id="wood-hatch" width="34" height="10" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="5" x2="34" y2="5" stroke="#9a6b31" stroke-width="1"/>
+      </pattern>
+      <pattern id="siding" width="38" height="38" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="0" y2="38" stroke="#c8ced6" stroke-width="1"/>
       </pattern>
       <style>
-        .sheet-bg{fill:#fffdf8}
-        .border{fill:none;stroke:#121820;stroke-width:2}
-        .title-line{stroke:#121820;stroke-width:1.2}
-        .wall{fill:#d8dce2;stroke:#121820;stroke-width:4}
-        .cut{fill:#fffdf8;stroke:#121820;stroke-width:3}
-        .thin{fill:none;stroke:#121820;stroke-width:1.4}
-        .med{fill:none;stroke:#121820;stroke-width:2.2}
-        .heavy{fill:none;stroke:#121820;stroke-width:4}
-        .dim{fill:none;stroke:#121820;stroke-width:1.2;marker-start:url(#arrow);marker-end:url(#arrow)}
-        .ext{stroke:#5c6673;stroke-width:1;stroke-dasharray:5 5}
-        .label{font:500 22px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .small{font:500 16px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .tiny{font:500 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .dimtxt{font:700 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .note{font:500 15px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#5c6673}
-        .title{font:800 28px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .sheetno{font:900 38px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#121820}
-        .badge{font:800 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#fff}
+        .bg{fill:#fffdf8}
+        .sheet-border{fill:none;stroke:#111827;stroke-width:2}
+        .title-rule{stroke:#111827;stroke-width:1.2}
+        .cut{fill:#d9dde3;stroke:#111827;stroke-width:5;stroke-linejoin:round}
+        .object{fill:#fffdf8;stroke:#111827;stroke-width:2.4;stroke-linejoin:round}
+        .object-light{fill:#fffdf8;stroke:#111827;stroke-width:1.4;stroke-linejoin:round}
+        .hidden{fill:none;stroke:#5b6470;stroke-width:1.4;stroke-dasharray:8 6}
+        .planning{fill:none;stroke:#a23d30;stroke-width:2.2;stroke-dasharray:10 7}
+        .blue-line{fill:none;stroke:#245f9f;stroke-width:2.4}
+        .blue-dash{fill:none;stroke:#245f9f;stroke-width:2;stroke-dasharray:9 6}
+        .dim{fill:none;stroke:#111827;stroke-width:1.2}
+        .ext{stroke:#5b6470;stroke-width:1;stroke-dasharray:5 5}
+        .thin{fill:none;stroke:#111827;stroke-width:1.2}
+        .med{fill:none;stroke:#111827;stroke-width:2.2}
+        .heavy{fill:none;stroke:#111827;stroke-width:4}
+        .title{font:800 28px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .subtitle{font:500 15px Inter,ui-sans-serif,system-ui,sans-serif;fill:#5b6470}
+        .sheet-no{font:900 42px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .label{font:750 22px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .small{font:600 16px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .tiny{font:600 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .note{font:500 15px Inter,ui-sans-serif,system-ui,sans-serif;fill:#5b6470}
+        .dimtxt{font:800 17px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827}
+        .key{font:800 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#fff}
       </style>
     </defs>
-  <rect width="1600" height="1100" class="sheet-bg"/>
+  <rect width="1600" height="1100" class="bg"/>
+  <rect x="42" y="42" width="1516" height="1016" class="sheet-border"/>
+  <line x1="42" y1="980" x2="1558" y2="980" class="title-rule"/>
+  <line x1="1138" y1="980" x2="1138" y2="1058" class="title-rule"/>
+  <text x="66" y="1018" class="title">Hot-Room Section</text>
+  <text x="66" y="1046" class="subtitle">96 in finished-ceiling case; lower benches if field ceiling lands at 94-95 in</text>
+  <text x="1170" y="1026" class="sheet-no">A201</text>
+  <text x="1170" y="1050" class="tiny">Side-yard sauna planning set | not stamped</text>
   
-    <rect x="40" y="40" width="1520" height="1020" class="border"/>
-    <line x1="40" y1="980" x2="1560" y2="980" class="title-line"/>
-    <line x1="1160" y1="980" x2="1160" y2="1060" class="title-line"/>
-    <text x="64" y="1024" class="title">Hot Room Section</text>
-    <text x="64" y="1052" class="note">96 in ceiling case · bench heights, ceiling relationship, heater, and schematic air path</text>
-    <text x="1190" y="1030" class="sheetno">A201</text>
-    <text x="1190" y="1056" class="tiny">Side Yard Sauna · planning set · inches</text>
-  
-      <rect x="250" y="204" width="576" height="576" class="" fill="#fffdf8" stroke="#121820" stroke-width="4"/>
-      <rect x="286" y="240" width="504" height="504" class="" fill="#fff7e6" stroke="#121820" stroke-width="1.5"/>
-      <path d="M240 148 L844 188 L844 212 L240 172 Z" fill="#f0f2f4" stroke="#121820" stroke-width="3"/>
-      <rect x="646" y="469" width="144" height="5" class="" fill="#121820" stroke="#121820" stroke-width="1"/>
-      <rect x="646" y="466" width="144" height="14" class="" fill="url(#wood-grain)" stroke="#121820" stroke-width="1.5"/>
-      <rect x="538" y="562" width="252" height="14" class="" fill="url(#wood-grain)" stroke="#121820" stroke-width="1.5"/>
-      <rect x="394" y="670" width="144" height="14" class="" fill="url(#wood-grain)" stroke="#121820" stroke-width="1.5"/>
-      <circle cx="436" cy="690" r="54" fill="#2b2f36" stroke="#121820" stroke-width="2"/>
-      <rect x="352" y="606" width="168" height="168" class="" fill="none" stroke="#a33a2a" stroke-width="2" stroke-dasharray="8 6"/>
-      <path d="M472 654 C568 480, 622 348, 670 264" fill="none" stroke="#245f9f" stroke-width="3" marker-end="url(#arrow-blue)"/>
-      <path d="M742 744 C550 744, 394 720, 388 672" fill="none" stroke="#245f9f" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#arrow-blue)"/>
-      <rect x="284" y="612" width="5" height="108" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
-      <rect x="787" y="660" width="6" height="66" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
-      <rect x="787" y="288" width="6" height="60" class="" fill="#245f9f" stroke="#245f9f" stroke-width="1"/>
-      <text x="264" y="624" class="tiny" text-anchor="end" >supply near heater</text>
-      <text x="780" y="672" class="tiny" text-anchor="end" >low exhaust</text>
-      <text x="780" y="318" class="tiny" text-anchor="end" >drying vent</text>
+      <rect x="245" y="224" width="620" height="576" class="cut" />
+      <rect x="309" y="260" width="504" height="504" class="object-light" fill="#fff8e8" stroke="#111827" stroke-width="1.6"/>
+      <path d="M229 176 L885 210 L885 236 L229 202 Z" fill="#e7eaee" stroke="#111827" stroke-width="3"/>
+      <rect x="669" y="486" width="144" height="16" class="" fill="url(#wood-hatch)" stroke="#111827" stroke-width="2"/>
+      <rect x="561" y="582" width="252" height="16" class="" fill="url(#wood-hatch)" stroke="#111827" stroke-width="2"/>
+      <rect x="421" y="690" width="144" height="16" class="" fill="url(#wood-hatch)" stroke="#111827" stroke-width="2"/>
+      <line x1="669" y1="502" x2="669" y2="764" class="med"/>
+      <line x1="561" y1="598" x2="561" y2="764" class="med"/>
+      <circle cx="437" cy="710" r="54" class="" fill="#2f343b" stroke="#111827" stroke-width="2.4"/>
+      <rect x="353" y="626" width="168" height="168" class="planning" />
+      <rect x="304" y="632" width="10" height="94" class="" fill="#245f9f" stroke="#245f9f"/>
+      <rect x="808" y="688" width="10" height="62" class="" fill="#245f9f" stroke="#245f9f"/>
+      <rect x="808" y="318" width="10" height="58" class="" fill="#245f9f" stroke="#245f9f"/>
+      <path d="M471 676 C591 488, 717 334, 729 332" class="blue-line" marker-end="url(#arrow-blue)"/>
+      <path d="M765 730 C589 746, 433 728, 407 692" class="blue-dash" marker-end="url(#arrow-blue)"/>
       
-    <line x1="190" y1="780" x2="222" y2="780" class="ext"/>
-    <line x1="190" y1="204" x2="222" y2="204" class="ext"/>
-    <line x1="198" y1="780" x2="198" y2="204" class="dim"/>
-    <text x="190" y="492" class="dimtxt" text-anchor="middle" transform="rotate(-90 190 492)">96 finished ceiling target</text>
+    <circle cx="741" cy="466" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="741" y="471" class="key" text-anchor="middle" >1</text>
       
-    <line x1="864" y1="474" x2="896" y2="474" class="ext"/>
-    <line x1="864" y1="204" x2="896" y2="204" class="ext"/>
-    <line x1="872" y1="474" x2="872" y2="204" class="dim"/>
-    <text x="864" y="339" class="dimtxt" text-anchor="middle" transform="rotate(-90 864 339)">45 top bench to ceiling</text>
+    <circle cx="629" cy="562" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="629" y="567" class="key" text-anchor="middle" >2</text>
       
-    <line x1="904" y1="780" x2="936" y2="780" class="ext"/>
-    <line x1="904" y1="474" x2="936" y2="474" class="ext"/>
-    <line x1="912" y1="780" x2="912" y2="474" class="dim"/>
-    <text x="904" y="627" class="dimtxt" text-anchor="middle" transform="rotate(-90 904 627)">51 upper bench</text>
+    <circle cx="493" cy="670" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="493" y="675" class="key" text-anchor="middle" >3</text>
       
-    <line x1="944" y1="780" x2="976" y2="780" class="ext"/>
-    <line x1="944" y1="570" x2="976" y2="570" class="ext"/>
-    <line x1="952" y1="780" x2="952" y2="570" class="dim"/>
-    <text x="944" y="675" class="dimtxt" text-anchor="middle" transform="rotate(-90 944 675)">35 foot platform</text>
+    <circle cx="521" cy="626" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="521" y="631" class="key" text-anchor="middle" >4</text>
       
-    <line x1="302" y1="780" x2="334" y2="780" class="ext"/>
-    <line x1="302" y1="678" x2="334" y2="678" class="ext"/>
-    <line x1="310" y1="780" x2="310" y2="678" class="dim"/>
-    <text x="302" y="729" class="dimtxt" text-anchor="middle" transform="rotate(-90 302 729)">17 lower step</text>
+    <line x1="155" y1="800" x2="195" y2="800" class="ext"/>
+    <line x1="155" y1="224" x2="195" y2="224" class="ext"/>
+    <line x1="175" y1="800" x2="175" y2="224" class="dim"/>
+    <line x1="167" y1="792" x2="183" y2="808" class="dim"/>
+    <line x1="167" y1="216" x2="183" y2="232" class="dim"/>
+    <text x="165" y="512" class="dimtxt" text-anchor="middle" transform="rotate(-90 165 512)">96 in finished ceiling</text>
       
-    <line x1="286" y1="812" x2="286" y2="842" class="ext"/>
-    <line x1="790" y1="812" x2="790" y2="842" class="ext"/>
-    <line x1="286" y1="834" x2="790" y2="834" class="dim"/>
-    <text x="538" y="826" class="dimtxt" text-anchor="middle" >84 clear hot-room depth</text>
+    <line x1="851" y1="494" x2="891" y2="494" class="ext"/>
+    <line x1="851" y1="224" x2="891" y2="224" class="ext"/>
+    <line x1="871" y1="494" x2="871" y2="224" class="dim"/>
+    <line x1="863" y1="486" x2="879" y2="502" class="dim"/>
+    <line x1="863" y1="216" x2="879" y2="232" class="dim"/>
+    <text x="881" y="359" class="dimtxt" text-anchor="middle" transform="rotate(-90 881 359)">45 in bench to ceiling</text>
       
-    <circle cx="718" cy="456" r="12" fill="#121820" stroke="#fffdf8" stroke-width="2"/>
-    <text x="718" y="461" class="badge" text-anchor="middle" >1</text>
+    <line x1="895" y1="800" x2="935" y2="800" class="ext"/>
+    <line x1="895" y1="494" x2="935" y2="494" class="ext"/>
+    <line x1="915" y1="800" x2="915" y2="494" class="dim"/>
+    <line x1="907" y1="792" x2="923" y2="808" class="dim"/>
+    <line x1="907" y1="486" x2="923" y2="502" class="dim"/>
+    <text x="925" y="647" class="dimtxt" text-anchor="middle" transform="rotate(-90 925 647)">51 in upper bench</text>
       
-    <circle cx="670" cy="552" r="12" fill="#121820" stroke="#fffdf8" stroke-width="2"/>
-    <text x="670" y="557" class="badge" text-anchor="middle" >2</text>
+    <line x1="939" y1="800" x2="979" y2="800" class="ext"/>
+    <line x1="939" y1="590" x2="979" y2="590" class="ext"/>
+    <line x1="959" y1="800" x2="959" y2="590" class="dim"/>
+    <line x1="951" y1="792" x2="967" y2="808" class="dim"/>
+    <line x1="951" y1="582" x2="967" y2="598" class="dim"/>
+    <text x="969" y="695" class="dimtxt" text-anchor="middle" transform="rotate(-90 969 695)">35 in foot platform</text>
       
-    <circle cx="508" cy="612" r="12" fill="#121820" stroke="#fffdf8" stroke-width="2"/>
-    <text x="508" y="617" class="badge" text-anchor="middle" >3</text>
+    <line x1="247" y1="800" x2="287" y2="800" class="ext"/>
+    <line x1="247" y1="698" x2="287" y2="698" class="ext"/>
+    <line x1="267" y1="800" x2="267" y2="698" class="dim"/>
+    <line x1="259" y1="792" x2="275" y2="808" class="dim"/>
+    <line x1="259" y1="690" x2="275" y2="706" class="dim"/>
+    <text x="257" y="749" class="dimtxt" text-anchor="middle" transform="rotate(-90 257 749)">17 in lower step</text>
       
-    <circle cx="788" cy="312" r="12" fill="#121820" stroke="#fffdf8" stroke-width="2"/>
-    <text x="788" y="317" class="badge" text-anchor="middle" >4</text>
-      <g transform="translate(1055 292)">
-        <text x="0" y="0" class="label" text-anchor="start" >Section notes</text>
-        <text x="0" y="38" class="note" text-anchor="start" >1. Upper bench: 24 in comfortable sitting depth.</text>
-        <text x="0" y="70" class="note" text-anchor="start" >2. Foot platform supports main seats and return posture.</text>
-        <text x="0" y="102" class="note" text-anchor="start" >3. HIVE Mini 9; confirm current clearances at install.</text>
-        <text x="0" y="134" class="note" text-anchor="start" >4. Vent side locations are controlled by E101.</text>
-      </g>
-      <g transform="translate(1055 530)">
-        <text x="0" y="0" class="label" text-anchor="start" >Performance targets</text>
-        <text x="0" y="38" class="note" text-anchor="start" >• Feet stay high, above the stone line.</text>
-        <text x="0" y="70" class="note" text-anchor="start" >• Room is for sitting, not lying down.</text>
-        <text x="0" y="102" class="note" text-anchor="start" >• Vents are framed before foil/cladding.</text>
-        <text x="0" y="134" class="note" text-anchor="start" >• If ceiling is 94-95 in, lower benches to hold 44-46 in above upper bench.</text>
-      </g>
+    <line x1="309" y1="834" x2="309" y2="876" class="ext"/>
+    <line x1="813" y1="834" x2="813" y2="876" class="ext"/>
+    <line x1="309" y1="858" x2="813" y2="858" class="dim"/>
+    <line x1="301" y1="866" x2="317" y2="850" class="dim"/>
+    <line x1="805" y1="866" x2="821" y2="850" class="dim"/>
+    <text x="561" y="881" class="dimtxt" text-anchor="middle" >84 in clear hot-room depth</text>
+      
+    <g transform="translate(1005 252)">
+      <text x="0" y="0" class="label" text-anchor="start" >Section keynotes</text>
+      
+      
+    <circle cx="13" cy="31" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="13" y="36" class="key" text-anchor="middle" >1</text>
+      <text x="38" y="36" class="note" text-anchor="start" >Upper bench: 24 in deep, primary comfort</text><text x="38" y="55" class="note" text-anchor="start" >surface.</text>
+      
+    <circle cx="13" cy="95" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="13" y="100" class="key" text-anchor="middle" >2</text>
+      <text x="38" y="100" class="note" text-anchor="start" >Foot platform: leg support and secondary</text><text x="38" y="119" class="note" text-anchor="start" >sitting.</text>
+      
+    <circle cx="13" cy="159" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="13" y="164" class="key" text-anchor="middle" >3</text>
+      <text x="38" y="164" class="note" text-anchor="start" >Lower step: access, not a comfort seat.</text>
+      
+    <circle cx="13" cy="204" r="13" fill="#111827" stroke="#fffdf8" stroke-width="2"/>
+    <text x="13" y="209" class="key" text-anchor="middle" >4</text>
+      <text x="38" y="209" class="note" text-anchor="start" >Heater guard and clearances</text><text x="38" y="228" class="note" text-anchor="start" >field-verified.</text>
+    </g>
+      <g transform="translate(1005 560)"><rect x="0" y="0" width="340" height="210" class="object-light" fill="#fffdf8"/><text x="14" y="27" class="small" text-anchor="start" >Bench geometry</text><line x1="0" y1="40" x2="340" y2="40" class="thin"/><line x1="0" y1="74" x2="340" y2="74" class="thin"/><text x="14" y="63" class="tiny" text-anchor="start" >Ceiling target</text><text x="164" y="63" class="tiny" text-anchor="start" >94-96 in</text><line x1="0" y1="108" x2="340" y2="108" class="thin"/><text x="14" y="97" class="tiny" text-anchor="start" >Drawn case</text><text x="164" y="97" class="tiny" text-anchor="start" >96 in ceiling</text><line x1="0" y1="142" x2="340" y2="142" class="thin"/><text x="14" y="131" class="tiny" text-anchor="start" >Top bench</text><text x="164" y="131" class="tiny" text-anchor="start" >51 in AFF</text><line x1="0" y1="176" x2="340" y2="176" class="thin"/><text x="14" y="165" class="tiny" text-anchor="start" >Foot platform</text><text x="164" y="165" class="tiny" text-anchor="start" >35 in AFF</text><line x1="0" y1="210" x2="340" y2="210" class="thin"/><text x="14" y="199" class="tiny" text-anchor="start" >Lower step</text><text x="164" y="199" class="tiny" text-anchor="start" >17 in AFF</text><line x1="150" y1="40" x2="150" y2="210" class="thin"/></g>
 </svg>
